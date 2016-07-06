@@ -1,5 +1,5 @@
 //
-//  HomeVC.h
+//  SBSQueryMasterVC.h
 //  QueryCollector
 //
 //  Created by Sandra Basquero on 6/7/16.
@@ -8,12 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeVC : UIViewController
+@interface SBSQueryMasterVC : UIViewController
 
-
-
-- (IBAction)goToQueries:(id)sender;
-
-
+- (IBAction)backHome:(id)sender;
 
 @end

@@ -7,7 +7,12 @@
         <!--Navigation Controller-->
         <scene sceneID="ceU-x1-RF7">
             <objects>
-                <navigationController id="DpX-Ot-fU9" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="DpX-Ot-fU9" sceneMemberID="viewController">
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wqa-Pk-XFd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -18,12 +23,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C8f-sm-g30" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-86" y="297"/>
+            <point key="canvasLocation" x="-86" y="201"/>
         </scene>
-        <!--View Controller-->
+        <!--HomeVC-->
         <scene sceneID="3Uh-x4-SYG">
             <objects>
-                <viewController id="qUs-Hd-sqe" sceneMemberID="viewController">
+                <viewController id="qUs-Hd-sqe" customClass="HomeVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NsW-Vh-eZK"/>
                         <viewControllerLayoutGuide type="bottom" id="nr4-wX-JnG"/>
@@ -31,7 +36,25 @@
                     <view key="view" contentMode="scaleToFill" id="ulD-UY-QN1">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amY-R4-XoG">
+                                <rect key="frame" x="618" y="451" width="83" height="57"/>
+                                <color key="backgroundColor" red="1" green="0.94339675339999995" blue="0.73748511880000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="goToQueries:" destination="qUs-Hd-sqe" eventType="touchUpInside" id="SVR-O5-7c5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c44-Ui-lnk">
+                                <rect key="frame" x="290" y="451" width="85" height="57"/>
+                                <color key="backgroundColor" red="0.7183649017" green="1" blue="0.99293145029999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="goToQueries:" destination="qUs-Hd-sqe" eventType="touchUpInside" id="8Tg-Ku-vZD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.53157062489999996" blue="0.44098358630000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="9FN-Eq-Sc7"/>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -39,10 +62,47 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <segue destination="u6N-us-0tc" kind="show" identifier="goToMasterQuery" id="HW1-n0-eFS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="APV-AM-sYz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-86" y="1112"/>
+        </scene>
+        <!--Query MasterVC-->
+        <scene sceneID="apP-Hn-VXQ">
+            <objects>
+                <viewController id="u6N-us-0tc" customClass="SBSQueryMasterVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AhI-1z-2AT"/>
+                        <viewControllerLayoutGuide type="bottom" id="vA9-VR-QOu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BK3-Jf-7dR">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EdD-PU-a11">
+                                <rect key="frame" x="771" y="110" width="106" height="54"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Volver">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backHome:" destination="u6N-us-0tc" eventType="touchUpInside" id="fok-4w-0rQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LzD-Uz-iUX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-86" y="2036"/>
         </scene>
     </scenes>
 </document>

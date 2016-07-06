@@ -46,6 +46,7 @@
 		957768431D2CF524006FE5A0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 957768241D2CF524006FE5A0 /* Reachability.m */; };
 		957768451D2D03BE006FE5A0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 957768441D2D03BE006FE5A0 /* libsqlite3.tbd */; };
 		9577684A1D2D06B7006FE5A0 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 957768491D2D06B7006FE5A0 /* HomeVC.m */; };
+		957768551D2D173F006FE5A0 /* SBSQueryMasterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 957768541D2D173F006FE5A0 /* SBSQueryMasterVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +136,8 @@
 		957768441D2D03BE006FE5A0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		957768481D2D06B7006FE5A0 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
 		957768491D2D06B7006FE5A0 /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		957768531D2D173F006FE5A0 /* SBSQueryMasterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSQueryMasterVC.h; sourceTree = "<group>"; };
+		957768541D2D173F006FE5A0 /* SBSQueryMasterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSQueryMasterVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,8 +325,18 @@
 			children = (
 				957768481D2D06B7006FE5A0 /* HomeVC.h */,
 				957768491D2D06B7006FE5A0 /* HomeVC.m */,
+				957768531D2D173F006FE5A0 /* SBSQueryMasterVC.h */,
+				957768541D2D173F006FE5A0 /* SBSQueryMasterVC.m */,
+				9577684B1D2D13B9006FE5A0 /* query1 */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9577684B1D2D13B9006FE5A0 /* query1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = query1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,6 +469,7 @@
 				9577682C1D2CF524006FE5A0 /* fmdb.m in Sources */,
 				9577683D1D2CF524006FE5A0 /* ReaderThumbsView.m in Sources */,
 				9577683B1D2CF524006FE5A0 /* ReaderThumbRender.m in Sources */,
+				957768551D2D173F006FE5A0 /* SBSQueryMasterVC.m in Sources */,
 				957768301D2CF524006FE5A0 /* ReaderConstants.m in Sources */,
 				957767BF1D2CF3B1006FE5A0 /* main.m in Sources */,
 				957768291D2CF524006FE5A0 /* FMDatabaseAdditions.m in Sources */,
@@ -650,6 +664,7 @@
 				957767DE1D2CF3B1006FE5A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		957767DF1D2CF3B1006FE5A0 /* Build configuration list for PBXNativeTarget "QueryCollectorUITests" */ = {
 			isa = XCConfigurationList;
@@ -658,6 +673,7 @@
 				957767E11D2CF3B1006FE5A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
