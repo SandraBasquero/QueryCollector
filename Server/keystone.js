@@ -4,18 +4,16 @@ require('dotenv').load();
 
 // Require keystone
 var keystone = require('keystone');
-	
 
 // Initialise Keystone with your project's configuration.
 // See http://keystonejs.com/guide/config for available options
 // and documentation.
 
-
 keystone.init({
 
 	'name': 'QueryCollector',
 	'brand': 'QueryCollector',
-
+	
 	'less': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
@@ -27,8 +25,7 @@ keystone.init({
 	'auto update': true,
 	'session': true,
 	'auth': true,
-	'user model': 'Manager',
-	'cookie secret': '/VZ[*v5[T1;s<?gf)Qgn"d^b1{FS1}3xT,nhQT#iCPrAJtMFT;x9p9;r06WbCr+X'
+	'user model': 'Manager'
 
 });
 
@@ -50,6 +47,7 @@ keystone.set('locals', {
 // Load your project's Routes
 
 keystone.set('routes', require('./routes'));
+
 
 // Setup common locals for your emails. The following are required by Keystone's
 // default email templates, you may remove them if you're using your own.
@@ -90,7 +88,6 @@ keystone.set('email tests', require('./routes/emails'));
 // Configure the navigation bar in Keystone's Admin UI
 
 keystone.set('nav', {
-	'enquiries': 'enquiries',
 	'managers': 'managers'
 });
 

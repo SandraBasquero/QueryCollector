@@ -1,30 +1,33 @@
-var gulp = require('gulp'),
-	jshint = require('gulp-jshint'),
-	jshintReporter = require('jshint-stylish'),
-	watch = require('gulp-watch');
+var gulp = require('gulp');
+var jshint = require('gulp-jshint');
+var jshintReporter = require('jshint-stylish');
+var watch = require('gulp-watch');
+var shell = require('gulp-shell')
 
-/*
- * Create variables for our project paths so we can change in one place
- */
+
 var paths = {
-	'src':['./models/**/*.js','./routes/**/*.js', 'keystone.js', 'package.json'],
-	// enable for tests
-	//'tests':['./test/*.js', './test/**/*.js']
-};
+	'src':['./models/**/*.js','./routes/**/*.js', 'keystone.js', 'package.json']
 
+};
 
 // gulp lint
 gulp.task('lint', function(){
 	gulp.src(paths.src)
 		.pipe(jshint())
 		.pipe(jshint.reporter(jshintReporter));
-
 });
 
 // gulp watcher for lint
-gulp.task('watchLint', function () {
-	gulp.src(paths.src)
-		.pipe(watch())
-		.pipe(jshint())
-		.pipe(jshint.reporter(jshintReporter));
+gulp.task('watch:lint', function () {
+	gulp.watch(paths.src, ['lint']);
 });
+
+
+
+gulp.task('runKeystone', shell.task('node keystone.js'));
+gulp.task('watch', [
+
+  'watch:lint'
+]);
+
+gulp.task('default', ['watch', 'runKeystone']);

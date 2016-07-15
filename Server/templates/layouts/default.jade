@@ -14,7 +14,6 @@ html
 
 		//- Customise the stylesheet for your site by editing /public/styles/site.less
 		//- All .less files will be automatically compiled and minified in production.
-
 		link(href="/styles/site.min.css", rel="stylesheet")
 
 		//- This file provides the default styling for the KeystoneJS Content Editor
@@ -24,8 +23,8 @@ html
 		//- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
 		//- Safely remove this block if you are not targeting IE8
 		//-[if lt IE 9]
-			script(src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js")
-			script(src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js")
+			script(src="//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.js")
+			script(src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js")
 		//-[endif]
 
 		//- Include template-specific stylesheets by extending the css block
@@ -91,14 +90,14 @@ html
 
 		//- JAVASCRIPT
 
-		//- jQuery 1.11.1 is included by default, and required by both Bootstrap
+		//- jQuery 1.11.3 is included by default, and required by both Bootstrap
 		//- and the KeystoneJS Content Editor. If you are not targeting IE8,
-		//- you can upgrade to 2.1.1 (also bundled) for better performance.
-		script(src='/js/lib/jquery/jquery-1.11.1.min.js')
+		//- you can upgrade to 2.1.4 (also bundled) for better performance.
+		script(src='/js/jquery/jquery-1.11.3.min.js')
 
 		//- Customise which Bootstrap javascript files are served by including
-		//- them specifically here, instead of bootstrap-3.2.0.min.js
-		script(src='/js/lib/bootstrap/bootstrap-3.2.0.min.js')
+		//- them specifically here, instead of bootstrap-3.3.5.min.js
+		script(src='/js/bootstrap/bootstrap-3.3.5.min.js')
 
 		//- The KeystoneJS Content Editor provides support for ks-editable data attributes,
 		//- which generate links to edit content for users who can access Keystone
