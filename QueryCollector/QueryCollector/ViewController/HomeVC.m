@@ -17,14 +17,71 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self startCityTableSettings];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+#pragma mark - Cities Menu
+
+-(void) startCityTableSettings {
+    
+    NSArray *workshopTemporal = [[NSArray alloc]init];
+    //workshopTemporal = [self.syncrData getWorkshopsUpdated];
+    workshopTemporal = @[@"Ciudad 1", @"Ciudad 2", @"Ciudad 3"];
+    self.citiesArray = [[NSMutableArray alloc]init];
+    
+    
+    if (workshopTemporal.count > 0) {
+        for (int i = 0; i < workshopTemporal.count; i++) {
+            //[self.citiesArray addObject:[[workshopTemporal objectAtIndex:i]name]];
+            [self.citiesArray addObject:[workshopTemporal objectAtIndex:i]];
+        }
+        self.cityBtn.enabled = true;
+    } else {
+        self.cityBtn.enabled = false;
+    }
+    
+    self.cityBtn.tintColor = [UIColor redColor];
+    [self.cityBtn setTitle:@"Seleccione Ciudad" forState:UIControlStateNormal]; //Pronvicia o Comunidad Autónoma?
+    
+    self.cityTable.hidden = YES;
+    self.cityTable.delegate = self;
+    self.cityTable.dataSource = self;
 }
 
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.citiesArray.count;
+}
+
+-(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *simpleTableIdentifier = @"SimpleTableItem";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+        cell.backgroundColor = [UIColor colorWithWhite:0.6 alpha:0.1];
+        cell.textLabel.textColor = [UIColor redColor];
+        cell.textLabel.font = [UIFont systemFontOfSize: 24];
+        
+    }
+    cell.textLabel.text = [self.citiesArray objectAtIndex:indexPath.row];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell =  [self.cityTable cellForRowAtIndexPath:indexPath];
+    self.cityBtn.tintColor = [UIColor colorWithRed:0/255.0 green:84/255.0 blue:129/255.0 alpha:1.0];
+    [self.cityBtn setTitle: cell.textLabel.text forState: UIControlStateNormal];
+    self.cityTable.hidden = YES;
+}
+
+- (IBAction)cityAction:(id)sender {
+    if (self.cityTable.hidden == YES) {
+        self.cityTable.hidden = NO;
+    } else {
+        self.cityTable.hidden = YES;
+    }
+}
 
 #pragma mark - Navigation
  
@@ -51,6 +108,5 @@
             break;
     }
 }
-
 
 @end

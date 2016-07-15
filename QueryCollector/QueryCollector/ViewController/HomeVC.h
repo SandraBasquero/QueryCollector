@@ -8,9 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeVC : UIViewController
+@interface HomeVC : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 
+
+- (IBAction)cityAction:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *cityBtn;
+@property (weak, nonatomic) IBOutlet UITableView *cityTable;
+@property (strong, nonatomic) NSMutableArray *citiesArray;
 
 - (IBAction)goToQueries:(id)sender;
 
