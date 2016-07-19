@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SBSSyncroData.h"
 
 @interface HomeVC : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 
+@property SBSSyncroData *syncData;
 
 - (IBAction)cityAction:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *cityBtn;

@@ -47,6 +47,10 @@
 		957768451D2D03BE006FE5A0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 957768441D2D03BE006FE5A0 /* libsqlite3.tbd */; };
 		9577684A1D2D06B7006FE5A0 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 957768491D2D06B7006FE5A0 /* HomeVC.m */; };
 		957768551D2D173F006FE5A0 /* SBSQueryMasterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 957768541D2D173F006FE5A0 /* SBSQueryMasterVC.m */; };
+		B616041C1D3EA5C30061C382 /* SBSApiDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B616041B1D3EA5C30061C382 /* SBSApiDataManager.m */; };
+		B61604221D3EA6F50061C382 /* SBSCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B61604211D3EA6F50061C382 /* SBSCityModel.m */; };
+		B61604251D3EA9120061C382 /* SBSCityData.m in Sources */ = {isa = PBXBuildFile; fileRef = B61604241D3EA9120061C382 /* SBSCityData.m */; };
+		B61604281D3EAE830061C382 /* SBSSyncroData.m in Sources */ = {isa = PBXBuildFile; fileRef = B61604271D3EAE830061C382 /* SBSSyncroData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +142,14 @@
 		957768491D2D06B7006FE5A0 /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
 		957768531D2D173F006FE5A0 /* SBSQueryMasterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSQueryMasterVC.h; sourceTree = "<group>"; };
 		957768541D2D173F006FE5A0 /* SBSQueryMasterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSQueryMasterVC.m; sourceTree = "<group>"; };
+		B616041A1D3EA5C30061C382 /* SBSApiDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSApiDataManager.h; sourceTree = "<group>"; };
+		B616041B1D3EA5C30061C382 /* SBSApiDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSApiDataManager.m; sourceTree = "<group>"; };
+		B61604201D3EA6F50061C382 /* SBSCityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSCityModel.h; sourceTree = "<group>"; };
+		B61604211D3EA6F50061C382 /* SBSCityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSCityModel.m; sourceTree = "<group>"; };
+		B61604231D3EA9120061C382 /* SBSCityData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSCityData.h; sourceTree = "<group>"; };
+		B61604241D3EA9120061C382 /* SBSCityData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSCityData.m; sourceTree = "<group>"; };
+		B61604261D3EAE830061C382 /* SBSSyncroData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSSyncroData.h; sourceTree = "<group>"; };
+		B61604271D3EAE830061C382 /* SBSSyncroData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSSyncroData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,6 +328,10 @@
 		957768461D2D0644006FE5A0 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				B616041D1D3EA6120061C382 /* Datas */,
+				B616041E1D3EA6120061C382 /* Models */,
+				B61604191D3EA5C30061C382 /* Api */,
+				B616041F1D3EA6AC0061C382 /* Syncro */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -337,6 +353,42 @@
 			children = (
 			);
 			path = query1;
+			sourceTree = "<group>";
+		};
+		B61604191D3EA5C30061C382 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				B616041A1D3EA5C30061C382 /* SBSApiDataManager.h */,
+				B616041B1D3EA5C30061C382 /* SBSApiDataManager.m */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		B616041D1D3EA6120061C382 /* Datas */ = {
+			isa = PBXGroup;
+			children = (
+				B61604231D3EA9120061C382 /* SBSCityData.h */,
+				B61604241D3EA9120061C382 /* SBSCityData.m */,
+			);
+			path = Datas;
+			sourceTree = "<group>";
+		};
+		B616041E1D3EA6120061C382 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B61604201D3EA6F50061C382 /* SBSCityModel.h */,
+				B61604211D3EA6F50061C382 /* SBSCityModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B616041F1D3EA6AC0061C382 /* Syncro */ = {
+			isa = PBXGroup;
+			children = (
+				B61604261D3EAE830061C382 /* SBSSyncroData.h */,
+				B61604271D3EAE830061C382 /* SBSSyncroData.m */,
+			);
+			path = Syncro;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,6 +496,8 @@
 				957768421D2CF524006FE5A0 /* UIXToolbarView.m in Sources */,
 				957768271D2CF524006FE5A0 /* DatabaseHelper.m in Sources */,
 				957768411D2CF524006FE5A0 /* ThumbsViewController.m in Sources */,
+				B616041C1D3EA5C30061C382 /* SBSApiDataManager.m in Sources */,
+				B61604281D3EAE830061C382 /* SBSSyncroData.m in Sources */,
 				957768261D2CF524006FE5A0 /* DatabaseAccess.m in Sources */,
 				9577683C1D2CF524006FE5A0 /* ReaderThumbRequest.m in Sources */,
 				9577683A1D2CF524006FE5A0 /* ReaderThumbQueue.m in Sources */,
@@ -462,6 +516,8 @@
 				9577682D1D2CF524006FE5A0 /* FMResultSet.m in Sources */,
 				957768311D2CF524006FE5A0 /* ReaderContentPage.m in Sources */,
 				957768381D2CF524006FE5A0 /* ReaderThumbCache.m in Sources */,
+				B61604221D3EA6F50061C382 /* SBSCityModel.m in Sources */,
+				B61604251D3EA9120061C382 /* SBSCityData.m in Sources */,
 				957768341D2CF524006FE5A0 /* ReaderDocument.m in Sources */,
 				957768251D2CF524006FE5A0 /* UIView+Animations.m in Sources */,
 				957767C21D2CF3B1006FE5A0 /* AppDelegate.m in Sources */,

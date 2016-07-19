@@ -8,6 +8,7 @@
 
 #import "HomeVC.h"
 #import "SBSQueryMasterVC.h"
+#import "SBSApiDataManager.h"
 
 @interface HomeVC ()
 @property int querySelected;
@@ -18,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.syncData = [SBSSyncroData new];
+    
     [self startCityTableSettings];
 }
 
@@ -27,15 +30,13 @@
 -(void) startCityTableSettings {
     
     NSArray *workshopTemporal = [[NSArray alloc]init];
-    //workshopTemporal = [self.syncrData getWorkshopsUpdated];
-    workshopTemporal = @[@"Ciudad 1", @"Ciudad 2", @"Ciudad 3"];
+    workshopTemporal = [self.syncData getCitiesUpdated];
     self.citiesArray = [[NSMutableArray alloc]init];
     
     
     if (workshopTemporal.count > 0) {
         for (int i = 0; i < workshopTemporal.count; i++) {
-            //[self.citiesArray addObject:[[workshopTemporal objectAtIndex:i]name]];
-            [self.citiesArray addObject:[workshopTemporal objectAtIndex:i]];
+            [self.citiesArray addObject:[[workshopTemporal objectAtIndex:i]name]];
         }
         self.cityBtn.enabled = true;
     } else {

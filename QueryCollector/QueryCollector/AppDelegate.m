@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "DatabaseHelper.h"
+#import "SBSCityData.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    [DatabaseHelper setDatabaseName:@"querycollector.sqlite"];
+    [DatabaseHelper configureDatabase:@"querycollector.sqlite"];
+    NSLog (@"%@", [DatabaseHelper getDatabasePath]);
+    
+    [[SBSCityData new] createTable];
+    
     return YES;
 }
 
