@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SBSSessionActivityModel.h"
 
 @interface SBSQueryMasterVC : UIViewController
 

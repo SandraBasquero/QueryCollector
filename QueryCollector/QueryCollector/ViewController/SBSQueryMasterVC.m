@@ -16,11 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //Singleton
+    SBSSessionActivityModel *sessionActivity = [SBSSessionActivityModel sessionHandler];
+    NSLog(@"%@ con id %@d, responde a query %d",sessionActivity.citySelected, sessionActivity.idForSession, sessionActivity.currentQuery);
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 

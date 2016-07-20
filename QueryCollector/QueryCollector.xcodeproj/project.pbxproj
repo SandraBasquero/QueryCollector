@@ -51,6 +51,7 @@
 		B61604221D3EA6F50061C382 /* SBSCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B61604211D3EA6F50061C382 /* SBSCityModel.m */; };
 		B61604251D3EA9120061C382 /* SBSCityData.m in Sources */ = {isa = PBXBuildFile; fileRef = B61604241D3EA9120061C382 /* SBSCityData.m */; };
 		B61604281D3EAE830061C382 /* SBSSyncroData.m in Sources */ = {isa = PBXBuildFile; fileRef = B61604271D3EAE830061C382 /* SBSSyncroData.m */; };
+		B6E6BC4E1D3FD64B004E5D1B /* SBSSessionActivityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6BC4D1D3FD64B004E5D1B /* SBSSessionActivityModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +151,8 @@
 		B61604241D3EA9120061C382 /* SBSCityData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSCityData.m; sourceTree = "<group>"; };
 		B61604261D3EAE830061C382 /* SBSSyncroData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSSyncroData.h; sourceTree = "<group>"; };
 		B61604271D3EAE830061C382 /* SBSSyncroData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSSyncroData.m; sourceTree = "<group>"; };
+		B6E6BC4C1D3FD64B004E5D1B /* SBSSessionActivityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSSessionActivityModel.h; sourceTree = "<group>"; };
+		B6E6BC4D1D3FD64B004E5D1B /* SBSSessionActivityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSSessionActivityModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -378,6 +381,8 @@
 			children = (
 				B61604201D3EA6F50061C382 /* SBSCityModel.h */,
 				B61604211D3EA6F50061C382 /* SBSCityModel.m */,
+				B6E6BC4C1D3FD64B004E5D1B /* SBSSessionActivityModel.h */,
+				B6E6BC4D1D3FD64B004E5D1B /* SBSSessionActivityModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -529,6 +534,7 @@
 				957768301D2CF524006FE5A0 /* ReaderConstants.m in Sources */,
 				957767BF1D2CF3B1006FE5A0 /* main.m in Sources */,
 				957768291D2CF524006FE5A0 /* FMDatabaseAdditions.m in Sources */,
+				B6E6BC4E1D3FD64B004E5D1B /* SBSSessionActivityModel.m in Sources */,
 				957768371D2CF524006FE5A0 /* ReaderMainToolbar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

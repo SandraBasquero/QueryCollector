@@ -9,6 +9,7 @@
 #import "HomeVC.h"
 #import "SBSQueryMasterVC.h"
 #import "SBSApiDataManager.h"
+#import "SBSSessionActivityModel.h"
 
 @interface HomeVC ()
 @property int querySelected;
@@ -88,7 +89,15 @@
  
 -(IBAction)goToQueries:(UIButton*)sender {
     self.querySelected = (int)sender.tag;
+    
     if (![self.cityBtn.currentTitle isEqualToString:@"Seleccione Ciudad"]) {
+        NSUUID *sessionId = [NSUUID new]; //Generate id for new session
+        //Singleton
+        SBSSessionActivityModel *sessionActivity = [SBSSessionActivityModel sessionHandler];
+        sessionActivity.idForSession = sessionId;
+        sessionActivity.citySelected = self.cityBtn.currentTitle;
+        sessionActivity.currentQuery = self.querySelected;
+        
         [self performSegueWithIdentifier:@"goToMasterQuery"sender:self];
     }
 }
