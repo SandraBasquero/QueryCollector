@@ -88,8 +88,9 @@
  
 -(IBAction)goToQueries:(UIButton*)sender {
     self.querySelected = (int)sender.tag;
-    [self performSegueWithIdentifier:@"goToMasterQuery"sender:self];
-    
+    if (![self.cityBtn.currentTitle isEqualToString:@"Seleccione Ciudad"]) {
+        [self performSegueWithIdentifier:@"goToMasterQuery"sender:self];
+    }
 }
 
 

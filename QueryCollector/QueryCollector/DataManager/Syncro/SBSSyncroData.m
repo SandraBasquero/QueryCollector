@@ -17,7 +17,7 @@
     SBSCityData *cityData = [SBSCityData new];
     NSArray *cityTemporal = [[NSArray alloc]initWithArray:[[SBSApiDataManager new] getCitiesFromServer]];
     NSArray *listBack;
-    if (cityTemporal != nil) {
+    if (cityTemporal != nil && cityTemporal.count > 0) {
         [cityData emptyCityTable];
         [cityData AllCitiesFromServerToLocal: cityTemporal];
     }
