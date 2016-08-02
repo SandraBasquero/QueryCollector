@@ -109,6 +109,9 @@
                                     <action selector="backHome:" destination="u6N-us-0tc" eventType="touchUpInside" id="fok-4w-0rQ"/>
                                 </connections>
                             </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="vGf-JO-zlQ">
+                                <rect key="frame" x="492" y="727" width="39" height="37"/>
+                            </pageControl>
                         </subviews>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -117,6 +120,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
+                        <outlet property="bullets" destination="vGf-JO-zlQ" id="lUX-1v-h8C"/>
                         <outlet property="masterScroll" destination="d6B-a1-DFA" id="CLO-Bc-jNY"/>
                     </connections>
                 </viewController>

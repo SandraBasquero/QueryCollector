@@ -14,6 +14,8 @@
 
 @property (weak, nonatomic) IBOutlet UIScrollView *masterScroll;
 @property int currentSlide;
+@property (weak, nonatomic) IBOutlet UIPageControl *bullets;
+
 
 //Slides Array Query 1
 @property NSMutableArray * query1SlidesArray;

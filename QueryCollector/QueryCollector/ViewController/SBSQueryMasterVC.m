@@ -36,6 +36,7 @@
         //Set masterScroll size to content the views
         [self.masterScroll setContentSize:CGSizeMake(1024 * self.query1SlidesArray.count, 768)];
         self.masterScroll.delegate = self;
+        self.bullets.numberOfPages = [self.query1SlidesArray count];
         
     } else if (sessionActivity.currentQuery == 2) {
         self.query2SlidesArray = [[NSMutableArray alloc]init];
@@ -44,7 +45,7 @@
         //Set masterScroll size to content the views
         [self.masterScroll setContentSize:CGSizeMake(1024 * self.query2SlidesArray.count, 768)];
         self.masterScroll.delegate = self;
-        
+        self.bullets.numberOfPages = [self.query2SlidesArray count];
     }
 }
 
@@ -63,6 +64,7 @@
 
 -(void)renderLastVisited {
     [self.masterScroll setContentOffset:CGPointMake(1024*(self.currentSlide), 0)];
+    self.bullets.currentPage = self.currentSlide;
 }
 
 
@@ -122,6 +124,7 @@
     
     self.currentSlide = page;
     NSLog(@"current slide %d",self.currentSlide);
+    self.bullets.currentPage = self.currentSlide;
 }
 
 
