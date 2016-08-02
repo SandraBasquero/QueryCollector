@@ -7,8 +7,15 @@
 //
 
 #import "SBSQueryMasterVC.h"
+
 #import "SBSSlide1Query1VC.h"
 #import "SBSSlide2Query1VC.h"
+#import "SBSSlide3Query1VC.h"
+#import "SBSSlide4Query1VC.h"
+
+#import "SBSSlide1Query2VC.h"
+#import "SBSSlide2Query2VC.h"
+#import "SBSSlide3Query2VC.h"
 
 @interface SBSQueryMasterVC ()
 
@@ -25,12 +32,19 @@
     if (sessionActivity.currentQuery == 1) {
         self.query1SlidesArray = [[NSMutableArray alloc]init];
         [self query1Selected]; //Build the slides in the scroll view
-        
-        [self renderLastVisited];
-        
+        [self renderLastVisited]; //Show directly the last view visited in the masterScroll.
         //Set masterScroll size to content the views
         [self.masterScroll setContentSize:CGSizeMake(1024 * self.query1SlidesArray.count, 768)];
         self.masterScroll.delegate = self;
+        
+    } else if (sessionActivity.currentQuery == 2) {
+        self.query2SlidesArray = [[NSMutableArray alloc]init];
+        [self query2Selected]; //Build the slides in the scroll view
+        [self renderLastVisited]; //Show directly the last view visited in the masterScroll.
+        //Set masterScroll size to content the views
+        [self.masterScroll setContentSize:CGSizeMake(1024 * self.query2SlidesArray.count, 768)];
+        self.masterScroll.delegate = self;
+        
     }
 }
 
@@ -52,14 +66,18 @@
 }
 
 
-#pragma mark - Cases ViewController Selected
+#pragma mark - Queries ViewController Selected
 
 -(void)query1Selected {
     SBSSlide1Query1VC *slide1 = [[SBSSlide1Query1VC alloc]initWithNibName:@"SBSSlide1Query1VC" bundle:nil];
     SBSSlide2Query1VC *slide2 = [[SBSSlide2Query1VC alloc]initWithNibName:@"SBSSlide2Query1VC" bundle:nil];
+    SBSSlide3Query1VC *slide3 = [[SBSSlide3Query1VC alloc]initWithNibName:@"SBSSlide3Query1VC" bundle:nil];
+    SBSSlide4Query1VC *slide4 = [[SBSSlide4Query1VC alloc]initWithNibName:@"SBSSlide4Query1VC" bundle:nil];
     
     [self.query1SlidesArray addObject:slide1];
     [self.query1SlidesArray addObject:slide2];
+    [self.query1SlidesArray addObject:slide3];
+    [self.query1SlidesArray addObject:slide4];
     
     CGFloat xPos = 0;
     for (SBSSlideBaseVC *slide in self.query1SlidesArray) {
@@ -68,13 +86,33 @@
     }
 }
 
+-(void)query2Selected {
+    SBSSlide1Query2VC *slide1 = [[SBSSlide1Query2VC alloc]initWithNibName:@"SBSSlide1Query2VC" bundle:nil];
+    SBSSlide2Query2VC *slide2 = [[SBSSlide2Query2VC alloc]initWithNibName:@"SBSSlide2Query2VC" bundle:nil];
+    SBSSlide3Query2VC *slide3 = [[SBSSlide3Query2VC alloc]initWithNibName:@"SBSSlide3Query2VC" bundle:nil];
+    
+    [self.query2SlidesArray addObject:slide1];
+    [self.query2SlidesArray addObject:slide2];
+    [self.query2SlidesArray addObject:slide3];
+    
+    CGFloat xPos = 0;
+    for (SBSSlideBaseVC *slide in self.query2SlidesArray) {
+        [self builderViews:slide inXPosition:xPos];
+        xPos += 1024;
+    }
+}
 
 #pragma mark - Navigation
 
 - (IBAction)backHome:(id)sender {
     //Singleton
     SBSSessionActivityModel *sessionHandler = [SBSSessionActivityModel sessionHandler];
-    sessionHandler.currentSlide = self.currentSlide;
+    if (sessionHandler.currentQuery == 1) {
+        sessionHandler.currentSlide = self.currentSlide;
+    } else if (sessionHandler.currentQuery == 2) {
+        sessionHandler.currentSlide2 = self.currentSlide;
+    }
+    
     [self.navigationController popToViewController:[self.navigationController.viewControllers objectAtIndex:0] animated:true];
 }
 

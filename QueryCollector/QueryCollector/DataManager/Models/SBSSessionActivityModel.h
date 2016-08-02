@@ -14,6 +14,7 @@
 @property NSString *citySelected;
 @property int currentQuery;
 @property int currentSlide;
+@property int currentSlide2;
 
 +(id)sessionHandler;
 

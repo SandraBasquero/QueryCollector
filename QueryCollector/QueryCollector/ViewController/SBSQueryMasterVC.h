@@ -17,6 +17,8 @@
 
 //Slides Array Query 1
 @property NSMutableArray * query1SlidesArray;
+//Slides Array Query 2
+@property NSMutableArray * query2SlidesArray;
 
 - (IBAction)backHome:(id)sender;
 

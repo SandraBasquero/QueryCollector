@@ -28,12 +28,14 @@
 -(id)initSession:(NSUUID*) idSession
       inCity:(NSString*) city
   andCurrentQuery:(int) currentQuery
- andCurrentSlide:(int) currentSlide {
+ andCurrentSlide:(int) currentSlide
+andCurrentSlide2:(int) currentSlide2 {
     if (self = [super init]) {
         self.idForSession = idSession;
         self.citySelected = city;
         self.currentQuery = currentQuery;
         self.currentSlide = currentSlide;
+        self.currentSlide2 = currentSlide2;
     }
     return self;
 }

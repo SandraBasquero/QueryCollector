@@ -118,6 +118,7 @@
             queryMasterVC.view.backgroundColor = [UIColor blueColor];
             break;
         case 2:
+            queryMasterVC.currentSlide = sessionActivity.currentSlide2;
             queryMasterVC.view.backgroundColor = [UIColor yellowColor];
             break;
         default:
