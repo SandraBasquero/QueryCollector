@@ -51,6 +51,11 @@
 		B61604221D3EA6F50061C382 /* SBSCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B61604211D3EA6F50061C382 /* SBSCityModel.m */; };
 		B61604251D3EA9120061C382 /* SBSCityData.m in Sources */ = {isa = PBXBuildFile; fileRef = B61604241D3EA9120061C382 /* SBSCityData.m */; };
 		B61604281D3EAE830061C382 /* SBSSyncroData.m in Sources */ = {isa = PBXBuildFile; fileRef = B61604271D3EAE830061C382 /* SBSSyncroData.m */; };
+		B68053E51D47853F0023DBFC /* SBSSlideBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B68053E41D47853F0023DBFC /* SBSSlideBaseVC.m */; };
+		B68053EE1D47DE670023DBFC /* SBSSlide1Query1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = B68053EC1D47DE670023DBFC /* SBSSlide1Query1VC.m */; };
+		B68053EF1D47DE670023DBFC /* SBSSlide1Query1VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B68053ED1D47DE670023DBFC /* SBSSlide1Query1VC.xib */; };
+		B68053F31D47DEF40023DBFC /* SBSSlide2Query1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = B68053F11D47DEF40023DBFC /* SBSSlide2Query1VC.m */; };
+		B68053F41D47DEF40023DBFC /* SBSSlide2Query1VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B68053F21D47DEF40023DBFC /* SBSSlide2Query1VC.xib */; };
 		B6E6BC4E1D3FD64B004E5D1B /* SBSSessionActivityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6BC4D1D3FD64B004E5D1B /* SBSSessionActivityModel.m */; };
 /* End PBXBuildFile section */
 
@@ -151,6 +156,14 @@
 		B61604241D3EA9120061C382 /* SBSCityData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSCityData.m; sourceTree = "<group>"; };
 		B61604261D3EAE830061C382 /* SBSSyncroData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSSyncroData.h; sourceTree = "<group>"; };
 		B61604271D3EAE830061C382 /* SBSSyncroData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSSyncroData.m; sourceTree = "<group>"; };
+		B68053E31D47853F0023DBFC /* SBSSlideBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSSlideBaseVC.h; sourceTree = "<group>"; };
+		B68053E41D47853F0023DBFC /* SBSSlideBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSSlideBaseVC.m; sourceTree = "<group>"; };
+		B68053EB1D47DE670023DBFC /* SBSSlide1Query1VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSSlide1Query1VC.h; sourceTree = "<group>"; };
+		B68053EC1D47DE670023DBFC /* SBSSlide1Query1VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSSlide1Query1VC.m; sourceTree = "<group>"; };
+		B68053ED1D47DE670023DBFC /* SBSSlide1Query1VC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBSSlide1Query1VC.xib; sourceTree = "<group>"; };
+		B68053F01D47DEF40023DBFC /* SBSSlide2Query1VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSSlide2Query1VC.h; sourceTree = "<group>"; };
+		B68053F11D47DEF40023DBFC /* SBSSlide2Query1VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSSlide2Query1VC.m; sourceTree = "<group>"; };
+		B68053F21D47DEF40023DBFC /* SBSSlide2Query1VC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBSSlide2Query1VC.xib; sourceTree = "<group>"; };
 		B6E6BC4C1D3FD64B004E5D1B /* SBSSessionActivityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSSessionActivityModel.h; sourceTree = "<group>"; };
 		B6E6BC4D1D3FD64B004E5D1B /* SBSSessionActivityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSSessionActivityModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -346,6 +359,8 @@
 				957768491D2D06B7006FE5A0 /* HomeVC.m */,
 				957768531D2D173F006FE5A0 /* SBSQueryMasterVC.h */,
 				957768541D2D173F006FE5A0 /* SBSQueryMasterVC.m */,
+				B68053E31D47853F0023DBFC /* SBSSlideBaseVC.h */,
+				B68053E41D47853F0023DBFC /* SBSSlideBaseVC.m */,
 				9577684B1D2D13B9006FE5A0 /* query1 */,
 			);
 			path = ViewController;
@@ -354,6 +369,12 @@
 		9577684B1D2D13B9006FE5A0 /* query1 */ = {
 			isa = PBXGroup;
 			children = (
+				B68053EB1D47DE670023DBFC /* SBSSlide1Query1VC.h */,
+				B68053EC1D47DE670023DBFC /* SBSSlide1Query1VC.m */,
+				B68053ED1D47DE670023DBFC /* SBSSlide1Query1VC.xib */,
+				B68053F01D47DEF40023DBFC /* SBSSlide2Query1VC.h */,
+				B68053F11D47DEF40023DBFC /* SBSSlide2Query1VC.m */,
+				B68053F21D47DEF40023DBFC /* SBSSlide2Query1VC.xib */,
 			);
 			path = query1;
 			sourceTree = "<group>";
@@ -476,6 +497,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B68053F41D47DEF40023DBFC /* SBSSlide2Query1VC.xib in Resources */,
+				B68053EF1D47DE670023DBFC /* SBSSlide1Query1VC.xib in Resources */,
 				957767CD1D2CF3B1006FE5A0 /* LaunchScreen.storyboard in Resources */,
 				957767CA1D2CF3B1006FE5A0 /* Assets.xcassets in Resources */,
 				957767C81D2CF3B1006FE5A0 /* Main.storyboard in Resources */,
@@ -499,7 +522,9 @@
 				957768351D2CF524006FE5A0 /* ReaderDocumentOutline.m in Sources */,
 				957768401D2CF524006FE5A0 /* ThumbsMainToolbar.m in Sources */,
 				957768421D2CF524006FE5A0 /* UIXToolbarView.m in Sources */,
+				B68053F31D47DEF40023DBFC /* SBSSlide2Query1VC.m in Sources */,
 				957768271D2CF524006FE5A0 /* DatabaseHelper.m in Sources */,
+				B68053EE1D47DE670023DBFC /* SBSSlide1Query1VC.m in Sources */,
 				957768411D2CF524006FE5A0 /* ThumbsViewController.m in Sources */,
 				B616041C1D3EA5C30061C382 /* SBSApiDataManager.m in Sources */,
 				B61604281D3EAE830061C382 /* SBSSyncroData.m in Sources */,
@@ -534,6 +559,7 @@
 				957768301D2CF524006FE5A0 /* ReaderConstants.m in Sources */,
 				957767BF1D2CF3B1006FE5A0 /* main.m in Sources */,
 				957768291D2CF524006FE5A0 /* FMDatabaseAdditions.m in Sources */,
+				B68053E51D47853F0023DBFC /* SBSSlideBaseVC.m in Sources */,
 				B6E6BC4E1D3FD64B004E5D1B /* SBSSessionActivityModel.m in Sources */,
 				957768371D2CF524006FE5A0 /* ReaderMainToolbar.m in Sources */,
 			);

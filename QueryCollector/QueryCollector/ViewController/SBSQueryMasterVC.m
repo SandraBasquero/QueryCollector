@@ -7,6 +7,8 @@
 //
 
 #import "SBSQueryMasterVC.h"
+#import "SBSSlide1Query1VC.h"
+#import "SBSSlide2Query1VC.h"
 
 @interface SBSQueryMasterVC ()
 
@@ -19,27 +21,70 @@
     
     //Singleton
     SBSSessionActivityModel *sessionActivity = [SBSSessionActivityModel sessionHandler];
-    NSLog(@"%@ con id %@d, responde a query %d",sessionActivity.citySelected, sessionActivity.idForSession, sessionActivity.currentQuery);
+    
+    if (sessionActivity.currentQuery == 1) {
+        self.query1SlidesArray = [[NSMutableArray alloc]init];
+        [self query1Selected]; //Build the slides in the scroll view
+        
+        [self renderLastVisited];
+        
+        //Set masterScroll size to content the views
+        [self.masterScroll setContentSize:CGSizeMake(1024 * self.query1SlidesArray.count, 768)];
+        self.masterScroll.delegate = self;
+    }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+
+#pragma mark - Utils
+
+-(void)builderViews:(SBSSlideBaseVC*)slide
+        inXPosition:(CGFloat)xPos {
+    
+    [self addChildViewController:slide];
+    slide.masterVC = self;
+    [self.masterScroll addSubview:slide.view];
+    [slide.view setFrame:CGRectMake(xPos, 0, 1024, 768)];
+}
+
+
+-(void)renderLastVisited {
+    [self.masterScroll setContentOffset:CGPointMake(1024*(self.currentSlide), 0)];
+}
+
+
+#pragma mark - Cases ViewController Selected
+
+-(void)query1Selected {
+    SBSSlide1Query1VC *slide1 = [[SBSSlide1Query1VC alloc]initWithNibName:@"SBSSlide1Query1VC" bundle:nil];
+    SBSSlide2Query1VC *slide2 = [[SBSSlide2Query1VC alloc]initWithNibName:@"SBSSlide2Query1VC" bundle:nil];
+    
+    [self.query1SlidesArray addObject:slide1];
+    [self.query1SlidesArray addObject:slide2];
+    
+    CGFloat xPos = 0;
+    for (SBSSlideBaseVC *slide in self.query1SlidesArray) {
+        [self builderViews:slide inXPosition:xPos];
+        xPos += 1024;
+    }
 }
 
 
 #pragma mark - Navigation
 
 - (IBAction)backHome:(id)sender {
+    //Singleton
+    SBSSessionActivityModel *sessionHandler = [SBSSessionActivityModel sessionHandler];
+    sessionHandler.currentSlide = self.currentSlide;
     [self.navigationController popToViewController:[self.navigationController.viewControllers objectAtIndex:0] animated:true];
 }
 
-/*
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    CGFloat pageWidth = self.masterScroll.frame.size.width;
+    int page = floor((self.masterScroll.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+    
+    self.currentSlide = page;
+    NSLog(@"current slide %d",self.currentSlide);
 }
-*/
 
 
 @end

@@ -108,8 +108,13 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     SBSQueryMasterVC *queryMasterVC = segue.destinationViewController;
+    
+    //Singleton
+    SBSSessionActivityModel *sessionActivity = [SBSSessionActivityModel sessionHandler];
+    
     switch (self.querySelected) {
         case 1:
+            queryMasterVC.currentSlide = sessionActivity.currentSlide;
             queryMasterVC.view.backgroundColor = [UIColor blueColor];
             break;
         case 2:

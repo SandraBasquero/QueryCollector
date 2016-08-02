@@ -9,7 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "SBSSessionActivityModel.h"
 
-@interface SBSQueryMasterVC : UIViewController
+@interface SBSQueryMasterVC : UIViewController<UIScrollViewDelegate>
+
+
+@property (weak, nonatomic) IBOutlet UIScrollView *masterScroll;
+@property int currentSlide;
+
+//Slides Array Query 1
+@property NSMutableArray * query1SlidesArray;
 
 - (IBAction)backHome:(id)sender;
 
