@@ -7,6 +7,7 @@
 //
 
 #import "HomeVC.h"
+#import <QuartzCore/QuartzCore.h>
 #import "SBSQueryMasterVC.h"
 #import "SBSApiDataManager.h"
 #import "SBSSessionActivityModel.h"
@@ -19,6 +20,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.cityBtn.layer.borderWidth = 1.0f;
+    [[self.cityBtn layer] setBorderColor: [UIColor whiteColor].CGColor];
     
     self.syncData = [SBSSyncroData new];
     
@@ -45,7 +49,7 @@
     }
     
     self.cityBtn.tintColor = [UIColor redColor];
-    [self.cityBtn setTitle:@"Seleccione Ciudad" forState:UIControlStateNormal]; //Pronvicia o Comunidad Autónoma?
+    [self.cityBtn setTitle:@"Selecciona la tuya" forState:UIControlStateNormal]; //Pronvicia o Comunidad Autónoma?
     
     self.cityTable.hidden = YES;
     self.cityTable.delegate = self;
@@ -90,7 +94,7 @@
 -(IBAction)goToQueries:(UIButton*)sender {
     self.querySelected = (int)sender.tag;
     
-    if (![self.cityBtn.currentTitle isEqualToString:@"Seleccione Ciudad"]) {
+    if (![self.cityBtn.currentTitle isEqualToString:@"Selecciona la tuya"]) {
         NSUUID *sessionId = [NSUUID new]; //Generate id for new session
         //Singleton
         SBSSessionActivityModel *sessionActivity = [SBSSessionActivityModel sessionHandler];

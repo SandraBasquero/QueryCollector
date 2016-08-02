@@ -32,20 +32,21 @@
     if (sessionActivity.currentQuery == 1) {
         self.query1SlidesArray = [[NSMutableArray alloc]init];
         [self query1Selected]; //Build the slides in the scroll view
-        [self renderLastVisited]; //Show directly the last view visited in the masterScroll.
         //Set masterScroll size to content the views
         [self.masterScroll setContentSize:CGSizeMake(1024 * self.query1SlidesArray.count, 768)];
         self.masterScroll.delegate = self;
         self.bullets.numberOfPages = [self.query1SlidesArray count];
+        [self renderLastVisited]; //Show directly the last view visited in the masterScroll.
         
     } else if (sessionActivity.currentQuery == 2) {
         self.query2SlidesArray = [[NSMutableArray alloc]init];
         [self query2Selected]; //Build the slides in the scroll view
-        [self renderLastVisited]; //Show directly the last view visited in the masterScroll.
         //Set masterScroll size to content the views
         [self.masterScroll setContentSize:CGSizeMake(1024 * self.query2SlidesArray.count, 768)];
         self.masterScroll.delegate = self;
         self.bullets.numberOfPages = [self.query2SlidesArray count];
+        
+        [self renderLastVisited]; //Show directly the last view visited in the masterScroll.
     }
 }
 
