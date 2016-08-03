@@ -21,11 +21,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.cityBtn.layer.borderWidth = 1.0f;
-    [[self.cityBtn layer] setBorderColor: [UIColor whiteColor].CGColor];
+    //Styles
+    [self setBorderToButton:self.cityBtn];
+    [self setBorderToButton:self.query1Btn];
+    [self setBorderToButton:self.query2Btn];
     
+    //Sync data
     self.syncData = [SBSSyncroData new];
-    
     [self startCityTableSettings];
 }
 
@@ -66,7 +68,7 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
         cell.backgroundColor = [UIColor colorWithWhite:0.6 alpha:0.1];
-        cell.textLabel.textColor = [UIColor redColor];
+        cell.textLabel.textColor = [UIColor blackColor];
         cell.textLabel.font = [UIFont systemFontOfSize: 24];
         
     }
@@ -88,6 +90,15 @@
         self.cityTable.hidden = YES;
     }
 }
+
+#pragma mark - Utils
+
+-(void)setBorderToButton:(UIButton*)btn {
+    btn.layer.borderWidth = 3.0f;
+    [[btn layer] setBorderColor: [UIColor blackColor].CGColor];
+}
+
+
 
 #pragma mark - Navigation
  
