@@ -53,10 +53,8 @@
 		B61604281D3EAE830061C382 /* SBSSyncroData.m in Sources */ = {isa = PBXBuildFile; fileRef = B61604271D3EAE830061C382 /* SBSSyncroData.m */; };
 		B66748F21D5202B000BC5750 /* 5655-close-up-of-an-isolated-sunflower-pv.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B66748EE1D5202B000BC5750 /* 5655-close-up-of-an-isolated-sunflower-pv.jpg */; };
 		B66748F41D5202B000BC5750 /* 9536-a-strawberry-splashing-in-water-or.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B66748F01D5202B000BC5750 /* 9536-a-strawberry-splashing-in-water-or.jpg */; };
-		B66748F51D5202B000BC5750 /* 15360-illustration-of-city-buildings-in-melbourne-australia-or.png in Resources */ = {isa = PBXBuildFile; fileRef = B66748F11D5202B000BC5750 /* 15360-illustration-of-city-buildings-in-melbourne-australia-or.png */; };
 		B66748F71D5203D500BC5750 /* 6957-illustration-of-a-city-skyline-or.png in Resources */ = {isa = PBXBuildFile; fileRef = B66748F61D5203D500BC5750 /* 6957-illustration-of-a-city-skyline-or.png */; };
 		B66748F91D52046200BC5750 /* 6957-illustration-of-a-city-skyline-or@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B66748F81D52046200BC5750 /* 6957-illustration-of-a-city-skyline-or@2x.png */; };
-		B66748FB1D52067800BC5750 /* 15360-illustration-of-city-buildings-in-melbourne-australia-or@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B66748FA1D52067800BC5750 /* 15360-illustration-of-city-buildings-in-melbourne-australia-or@2x.png */; };
 		B670283A1D5262E600D911DA /* 15360-illustration-of-city-buildings-in-melbourne-australia-or-resize.png in Resources */ = {isa = PBXBuildFile; fileRef = B67028381D5262E600D911DA /* 15360-illustration-of-city-buildings-in-melbourne-australia-or-resize.png */; };
 		B670283B1D5262E600D911DA /* 15360-illustration-of-city-buildings-in-melbourne-australia-or-resize@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B67028391D5262E600D911DA /* 15360-illustration-of-city-buildings-in-melbourne-australia-or-resize@2x.png */; };
 		B68053E51D47853F0023DBFC /* SBSSlideBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B68053E41D47853F0023DBFC /* SBSSlideBaseVC.m */; };
@@ -176,10 +174,8 @@
 		B61604271D3EAE830061C382 /* SBSSyncroData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSSyncroData.m; sourceTree = "<group>"; };
 		B66748EE1D5202B000BC5750 /* 5655-close-up-of-an-isolated-sunflower-pv.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "5655-close-up-of-an-isolated-sunflower-pv.jpg"; sourceTree = "<group>"; };
 		B66748F01D5202B000BC5750 /* 9536-a-strawberry-splashing-in-water-or.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "9536-a-strawberry-splashing-in-water-or.jpg"; sourceTree = "<group>"; };
-		B66748F11D5202B000BC5750 /* 15360-illustration-of-city-buildings-in-melbourne-australia-or.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15360-illustration-of-city-buildings-in-melbourne-australia-or.png"; sourceTree = "<group>"; };
 		B66748F61D5203D500BC5750 /* 6957-illustration-of-a-city-skyline-or.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6957-illustration-of-a-city-skyline-or.png"; sourceTree = "<group>"; };
 		B66748F81D52046200BC5750 /* 6957-illustration-of-a-city-skyline-or@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6957-illustration-of-a-city-skyline-or@2x.png"; sourceTree = "<group>"; };
-		B66748FA1D52067800BC5750 /* 15360-illustration-of-city-buildings-in-melbourne-australia-or@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15360-illustration-of-city-buildings-in-melbourne-australia-or@2x.png"; sourceTree = "<group>"; };
 		B67028381D5262E600D911DA /* 15360-illustration-of-city-buildings-in-melbourne-australia-or-resize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15360-illustration-of-city-buildings-in-melbourne-australia-or-resize.png"; sourceTree = "<group>"; };
 		B67028391D5262E600D911DA /* 15360-illustration-of-city-buildings-in-melbourne-australia-or-resize@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15360-illustration-of-city-buildings-in-melbourne-australia-or-resize@2x.png"; sourceTree = "<group>"; };
 		B68053E31D47853F0023DBFC /* SBSSlideBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSSlideBaseVC.h; sourceTree = "<group>"; };
@@ -479,12 +475,10 @@
 			children = (
 				B67028381D5262E600D911DA /* 15360-illustration-of-city-buildings-in-melbourne-australia-or-resize.png */,
 				B67028391D5262E600D911DA /* 15360-illustration-of-city-buildings-in-melbourne-australia-or-resize@2x.png */,
-				B66748FA1D52067800BC5750 /* 15360-illustration-of-city-buildings-in-melbourne-australia-or@2x.png */,
 				B66748F81D52046200BC5750 /* 6957-illustration-of-a-city-skyline-or@2x.png */,
 				B66748F61D5203D500BC5750 /* 6957-illustration-of-a-city-skyline-or.png */,
 				B66748EE1D5202B000BC5750 /* 5655-close-up-of-an-isolated-sunflower-pv.jpg */,
 				B66748F01D5202B000BC5750 /* 9536-a-strawberry-splashing-in-water-or.jpg */,
-				B66748F11D5202B000BC5750 /* 15360-illustration-of-city-buildings-in-melbourne-australia-or.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -585,7 +579,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B66748F51D5202B000BC5750 /* 15360-illustration-of-city-buildings-in-melbourne-australia-or.png in Resources */,
 				B66748F21D5202B000BC5750 /* 5655-close-up-of-an-isolated-sunflower-pv.jpg in Resources */,
 				B68053F41D47DEF40023DBFC /* SBSSlide2Query1VC.xib in Resources */,
 				B66748F71D5203D500BC5750 /* 6957-illustration-of-a-city-skyline-or.png in Resources */,
@@ -594,7 +587,6 @@
 				B6D1917D1D50B55000A88162 /* SBSSlide2Query2VC.xib in Resources */,
 				B68053EF1D47DE670023DBFC /* SBSSlide1Query1VC.xib in Resources */,
 				B6D1916D1D50AE9500A88162 /* SBSSlide3Query1VC.xib in Resources */,
-				B66748FB1D52067800BC5750 /* 15360-illustration-of-city-buildings-in-melbourne-australia-or@2x.png in Resources */,
 				957767CD1D2CF3B1006FE5A0 /* LaunchScreen.storyboard in Resources */,
 				957767CA1D2CF3B1006FE5A0 /* Assets.xcassets in Resources */,
 				B670283A1D5262E600D911DA /* 15360-illustration-of-city-buildings-in-melbourne-australia-or-resize.png in Resources */,

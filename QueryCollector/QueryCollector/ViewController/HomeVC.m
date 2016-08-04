@@ -25,6 +25,7 @@
     [self setBorderToButton:self.cityBtn];
     [self setBorderToButton:self.query1Btn];
     [self setBorderToButton:self.query2Btn];
+    self.cityBtn.titleLabel.font = [UIFont fontWithName:@"AvenirNext-DemiBold" size:22];
     
     //Sync data
     self.syncData = [SBSSyncroData new];
@@ -50,12 +51,14 @@
         self.cityBtn.enabled = false;
     }
     
-    self.cityBtn.tintColor = [UIColor redColor];
-    [self.cityBtn setTitle:@"Selecciona la tuya" forState:UIControlStateNormal]; //Pronvicia o Comunidad Autónoma?
+    [self.cityBtn setTitle:@"Selecciona la tuya" forState:UIControlStateNormal];
     
     self.cityTable.hidden = YES;
     self.cityTable.delegate = self;
     self.cityTable.dataSource = self;
+    //Style
+    self.cityTable.layer.borderWidth = 3.0f;
+    [[self.cityTable layer] setBorderColor: [UIColor blackColor].CGColor];
 }
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -69,7 +72,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
         cell.backgroundColor = [UIColor colorWithWhite:0.6 alpha:0.1];
         cell.textLabel.textColor = [UIColor blackColor];
-        cell.textLabel.font = [UIFont systemFontOfSize: 24];
+        cell.textLabel.font =  [UIFont fontWithName:@"AvenirNext-DemiBold" size:20];
         
     }
     cell.textLabel.text = [self.citiesArray objectAtIndex:indexPath.row];
