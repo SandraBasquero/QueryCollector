@@ -23,5 +23,6 @@
 @property NSMutableArray * query2SlidesArray;
 
 - (IBAction)backHome:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *backHomeBtn;
 
 @end

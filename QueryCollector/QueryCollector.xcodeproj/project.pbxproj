@@ -62,6 +62,8 @@
 		B68053EF1D47DE670023DBFC /* SBSSlide1Query1VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B68053ED1D47DE670023DBFC /* SBSSlide1Query1VC.xib */; };
 		B68053F31D47DEF40023DBFC /* SBSSlide2Query1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = B68053F11D47DEF40023DBFC /* SBSSlide2Query1VC.m */; };
 		B68053F41D47DEF40023DBFC /* SBSSlide2Query1VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B68053F21D47DEF40023DBFC /* SBSSlide2Query1VC.xib */; };
+		B6CC87931D588C190016EE34 /* back-home-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CC87911D588C190016EE34 /* back-home-btn.png */; };
+		B6CC87941D588C190016EE34 /* back-home-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CC87921D588C190016EE34 /* back-home-btn@2x.png */; };
 		B6D1916C1D50AE9500A88162 /* SBSSlide3Query1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D1916A1D50AE9500A88162 /* SBSSlide3Query1VC.m */; };
 		B6D1916D1D50AE9500A88162 /* SBSSlide3Query1VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D1916B1D50AE9500A88162 /* SBSSlide3Query1VC.xib */; };
 		B6D191711D50AFAA00A88162 /* SBSSlide4Query1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D1916F1D50AFAA00A88162 /* SBSSlide4Query1VC.m */; };
@@ -186,6 +188,8 @@
 		B68053F01D47DEF40023DBFC /* SBSSlide2Query1VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSSlide2Query1VC.h; sourceTree = "<group>"; };
 		B68053F11D47DEF40023DBFC /* SBSSlide2Query1VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSSlide2Query1VC.m; sourceTree = "<group>"; };
 		B68053F21D47DEF40023DBFC /* SBSSlide2Query1VC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBSSlide2Query1VC.xib; sourceTree = "<group>"; };
+		B6CC87911D588C190016EE34 /* back-home-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-home-btn.png"; sourceTree = "<group>"; };
+		B6CC87921D588C190016EE34 /* back-home-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-home-btn@2x.png"; sourceTree = "<group>"; };
 		B6D191691D50AE9500A88162 /* SBSSlide3Query1VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSSlide3Query1VC.h; sourceTree = "<group>"; };
 		B6D1916A1D50AE9500A88162 /* SBSSlide3Query1VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSSlide3Query1VC.m; sourceTree = "<group>"; };
 		B6D1916B1D50AE9500A88162 /* SBSSlide3Query1VC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBSSlide3Query1VC.xib; sourceTree = "<group>"; };
@@ -473,6 +477,8 @@
 		B66748ED1D5200C300BC5750 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B6CC87911D588C190016EE34 /* back-home-btn.png */,
+				B6CC87921D588C190016EE34 /* back-home-btn@2x.png */,
 				B67028381D5262E600D911DA /* 15360-illustration-of-city-buildings-in-melbourne-australia-or-resize.png */,
 				B67028391D5262E600D911DA /* 15360-illustration-of-city-buildings-in-melbourne-australia-or-resize@2x.png */,
 				B66748F81D52046200BC5750 /* 6957-illustration-of-a-city-skyline-or@2x.png */,
@@ -580,6 +586,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B66748F21D5202B000BC5750 /* 5655-close-up-of-an-isolated-sunflower-pv.jpg in Resources */,
+				B6CC87941D588C190016EE34 /* back-home-btn@2x.png in Resources */,
 				B68053F41D47DEF40023DBFC /* SBSSlide2Query1VC.xib in Resources */,
 				B66748F71D5203D500BC5750 /* 6957-illustration-of-a-city-skyline-or.png in Resources */,
 				B6D191821D50B5CD00A88162 /* SBSSlide3Query2VC.xib in Resources */,
@@ -593,6 +600,7 @@
 				B66748F91D52046200BC5750 /* 6957-illustration-of-a-city-skyline-or@2x.png in Resources */,
 				957767C81D2CF3B1006FE5A0 /* Main.storyboard in Resources */,
 				B6D191721D50AFAA00A88162 /* SBSSlide4Query1VC.xib in Resources */,
+				B6CC87931D588C190016EE34 /* back-home-btn.png in Resources */,
 				B66748F41D5202B000BC5750 /* 9536-a-strawberry-splashing-in-water-or.jpg in Resources */,
 				B670283B1D5262E600D911DA /* 15360-illustration-of-city-buildings-in-melbourne-australia-or-resize@2x.png in Resources */,
 			);

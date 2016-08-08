@@ -17,4 +17,6 @@
 @property SBSSessionActivityModel *sessionHandler;
 
 
+//Utils
+-(void)customBorderStyles:(NSArray*)elements;
 @end

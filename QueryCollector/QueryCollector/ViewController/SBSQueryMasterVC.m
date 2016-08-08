@@ -29,6 +29,9 @@
     //Singleton
     SBSSessionActivityModel *sessionActivity = [SBSSessionActivityModel sessionHandler];
     
+    //Styles
+    [self setBorderToButton:self.backHomeBtn];
+    
     if (sessionActivity.currentQuery == 1) {
         self.query1SlidesArray = [[NSMutableArray alloc]init];
         [self query1Selected]; //Build the slides in the scroll view
@@ -68,6 +71,10 @@
     self.bullets.currentPage = self.currentSlide;
 }
 
+-(void)setBorderToButton:(UIButton*)btn {
+    btn.layer.borderWidth = 3.0f;
+    [[btn layer] setBorderColor: [UIColor blackColor].CGColor];
+}
 
 #pragma mark - Queries ViewController Selected
 
