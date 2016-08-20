@@ -37,6 +37,9 @@
                     <state key="normal" title="A diario">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnAction:" destination="-1" eventType="touchUpInside" id="152-50-F3a"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nh-HD-zOb">
                     <rect key="frame" x="580" y="355.5" width="333" height="56.5"/>
@@ -46,6 +49,9 @@
                     <state key="normal" title="Cada 1 o 2 semanas">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnAction:" destination="-1" eventType="touchUpInside" id="gem-3Q-Q5Q"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHX-v1-Wab">
                     <rect key="frame" x="112" y="544.5" width="333" height="56.5"/>
@@ -55,6 +61,9 @@
                     <state key="normal" title="Cada 1 o 2 meses">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnAction:" destination="-1" eventType="touchUpInside" id="x4o-NN-4n4"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCb-md-cRf">
                     <rect key="frame" x="580" y="544.5" width="333" height="56.5"/>
@@ -64,6 +73,9 @@
                     <state key="normal" title="De 1 a 3 veces al año">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnAction:" destination="-1" eventType="touchUpInside" id="ihb-Od-kRP"/>
+                    </connections>
                 </button>
             </subviews>
             <nil key="simulatedStatusBarMetrics"/>

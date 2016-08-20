@@ -10,31 +10,30 @@
 
 @interface SBSSlide2Query2VC ()
 
+@property BOOL firstTime;
+
 @end
+
 
 @implementation SBSSlide2Query2VC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
     
     //Styles
     [self customBorderStyles:self.answerBtnArray];
+    self.firstTime = true;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)btnsAction:(id)sender {
+    if (self.firstTime) {
+        for (UIButton *btn in self.answerBtnArray) {
+            btn.selected = false;
+            [self buttonUnselectedStyle:btn];
+        }
+        self.firstTime = false;
+    }
+    [self selectOne:sender];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

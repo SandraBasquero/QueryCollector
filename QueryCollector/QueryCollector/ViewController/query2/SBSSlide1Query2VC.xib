@@ -30,6 +30,9 @@
                     <state key="normal" title="Costa">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnsAction:" destination="-1" eventType="touchUpInside" id="grA-ja-Zzw"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="El7-Vg-bWf">
                     <rect key="frame" x="580" y="356.5" width="333" height="56.5"/>
@@ -39,6 +42,9 @@
                     <state key="normal" title="Montaña">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnsAction:" destination="-1" eventType="touchUpInside" id="tZ9-ts-IQB"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjq-mv-G9a">
                     <rect key="frame" x="112" y="544.5" width="333" height="56.5"/>
@@ -48,6 +54,9 @@
                     <state key="normal" title="Ciudad">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnsAction:" destination="-1" eventType="touchUpInside" id="XJI-yu-aNO"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5Q-I0-ITi">
                     <rect key="frame" x="580" y="544" width="333" height="56.5"/>
@@ -57,6 +66,9 @@
                     <state key="normal" title="El extranjero">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnsAction:" destination="-1" eventType="touchUpInside" id="AjW-2e-mKB"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¿Qué destino prefieres para tus vacaciones de verano?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKz-gB-uhq">
                     <rect key="frame" x="0.0" y="115" width="1024" height="80"/>

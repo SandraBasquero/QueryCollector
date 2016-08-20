@@ -13,4 +13,7 @@
 //Utils
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *answerBtnArray;
 
+//Buttons Actions
+- (IBAction)btnsAction:(id)sender;
+
 @end

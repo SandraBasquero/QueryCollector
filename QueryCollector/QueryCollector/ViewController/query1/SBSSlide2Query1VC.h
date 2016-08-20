@@ -14,5 +14,7 @@
 //Styles
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *answerBtnArray;
 
+//Btns actions
+- (IBAction)btnsAction:(id)sender;
 
 @end

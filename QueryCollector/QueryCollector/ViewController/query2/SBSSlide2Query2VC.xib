@@ -32,6 +32,9 @@
                     <state key="normal" title="Castellano">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnsAction:" destination="-1" eventType="touchUpInside" id="thC-gy-eSr"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfL-Z1-7AN">
                     <rect key="frame" x="394" y="356.5" width="237" height="56.5"/>
@@ -41,6 +44,9 @@
                     <state key="normal" title="Inglés">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnsAction:" destination="-1" eventType="touchUpInside" id="k5c-ue-dQy"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GsH-B4-BaI">
                     <rect key="frame" x="683" y="356.5" width="237" height="56.5"/>
@@ -50,6 +56,9 @@
                     <state key="normal" title="Francés">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnsAction:" destination="-1" eventType="touchUpInside" id="NLl-nq-pKQ"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIp-lD-hMA">
                     <rect key="frame" x="394" y="544.5" width="237" height="56.5"/>
@@ -59,6 +68,9 @@
                     <state key="normal" title="Italiano">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnsAction:" destination="-1" eventType="touchUpInside" id="lbJ-s4-ESm"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gW-CK-OOx">
                     <rect key="frame" x="683" y="544.5" width="237" height="56.5"/>
@@ -68,6 +80,9 @@
                     <state key="normal" title="Otros">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnsAction:" destination="-1" eventType="touchUpInside" id="sw8-hZ-wM0"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bag-bo-WsB">
                     <rect key="frame" x="104" y="544.5" width="237" height="56.5"/>
@@ -77,6 +92,9 @@
                     <state key="normal" title="Alemán">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnsAction:" destination="-1" eventType="touchUpInside" id="AzV-U7-pfO"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Selecciona los idiomas en los que puedes comunicarte:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6c-HC-0r8">
                     <rect key="frame" x="0.0" y="115" width="1024" height="80"/>

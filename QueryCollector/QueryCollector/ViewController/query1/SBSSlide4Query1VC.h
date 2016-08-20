@@ -10,8 +10,9 @@
 
 @interface SBSSlide4Query1VC : SBSSlideBaseVC
 
-
-
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *answerBtnArray;
+
+//Buttons Actions
+- (IBAction)btnAction:(id)sender;
 
 @end

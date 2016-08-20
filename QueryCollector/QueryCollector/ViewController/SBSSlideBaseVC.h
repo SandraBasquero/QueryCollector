@@ -17,6 +17,11 @@
 @property SBSSessionActivityModel *sessionHandler;
 
 
-//Utils
+//Styles
 -(void)customBorderStyles:(NSArray*)elements;
+-(void)buttonUnselectedStyle:(UIButton*)btn;
+
+//Buttons Actions
+-(void)selectOne:(UIButton*)sender inCollection:(NSArray*)collection;
+-(void)selectOne:(UIButton*)sender;
 @end

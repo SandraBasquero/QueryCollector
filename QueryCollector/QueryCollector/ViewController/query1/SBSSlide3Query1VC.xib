@@ -36,6 +36,9 @@
                     <state key="normal" title="5 horas o menos">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnsAction:" destination="-1" eventType="touchUpInside" id="lqJ-Tv-Bpa"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TX-pj-EDD">
                     <rect key="frame" x="385" y="462" width="253" height="56.5"/>
@@ -45,6 +48,9 @@
                     <state key="normal" title="De 6 a 8 horas">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnsAction:" destination="-1" eventType="touchUpInside" id="ybt-Hw-oaf"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85Q-eP-2Sp">
                     <rect key="frame" x="385" y="568" width="253" height="56.5"/>
@@ -54,6 +60,9 @@
                     <state key="normal" title="Más de 8 horas">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnsAction:" destination="-1" eventType="touchUpInside" id="eQA-XQ-yhe"/>
+                    </connections>
                 </button>
             </subviews>
             <nil key="simulatedStatusBarMetrics"/>

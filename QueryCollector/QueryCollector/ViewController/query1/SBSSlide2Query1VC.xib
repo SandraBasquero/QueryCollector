@@ -36,6 +36,9 @@
                     <state key="normal" title="Ningún día">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnsAction:" destination="-1" eventType="touchUpInside" id="L7U-RS-jo9"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUH-0u-e59">
                     <rect key="frame" x="385" y="462.5" width="253" height="56.5"/>
@@ -45,6 +48,9 @@
                     <state key="normal" title="De 1 a 3 días">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnsAction:" destination="-1" eventType="touchUpInside" id="yZW-ek-IUI"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKD-cG-8us">
                     <rect key="frame" x="385" y="568.5" width="253" height="56.5"/>
@@ -54,6 +60,9 @@
                     <state key="normal" title="4 días o más">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnsAction:" destination="-1" eventType="touchUpInside" id="K83-Yw-jCa"/>
+                    </connections>
                 </button>
             </subviews>
             <nil key="simulatedStatusBarMetrics"/>

@@ -37,6 +37,9 @@
                     <state key="normal" title="Amigos/as">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="bntsAction:" destination="-1" eventType="touchUpInside" id="qRp-sk-Fu4"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlK-j2-VcG">
                     <rect key="frame" x="112" y="543.5" width="333" height="56.5"/>
@@ -46,6 +49,9 @@
                     <state key="normal" title="Pareja">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="bntsAction:" destination="-1" eventType="touchUpInside" id="Qaa-xp-eL2"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHF-NQ-gA3">
                     <rect key="frame" x="112" y="356.5" width="333" height="56.5"/>
@@ -55,6 +61,9 @@
                     <state key="normal" title="Familia">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="bntsAction:" destination="-1" eventType="touchUpInside" id="OaM-NL-wQ9"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L57-AX-rUM">
                     <rect key="frame" x="580" y="544" width="333" height="56.5"/>
@@ -64,6 +73,9 @@
                     <state key="normal" title="Solo/a">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="bntsAction:" destination="-1" eventType="touchUpInside" id="Axi-Cl-bq5"/>
+                    </connections>
                 </button>
             </subviews>
             <nil key="simulatedStatusBarMetrics"/>
