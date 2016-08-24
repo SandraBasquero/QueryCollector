@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "DatabaseHelper.h"
 #import "SBSCityData.h"
+#import "SBSAnswerData.h"
 
 @interface AppDelegate ()
 
@@ -26,6 +27,7 @@
     NSLog (@"%@", [DatabaseHelper getDatabasePath]);
     
     [[SBSCityData new] createTable];
+    [[SBSAnswerData new] createTable];
     
     return YES;
 }

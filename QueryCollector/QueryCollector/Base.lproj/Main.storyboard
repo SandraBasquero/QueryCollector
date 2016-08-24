@@ -123,7 +123,7 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.25" contentMode="center" fixedFrame="YES" image="15360-illustration-of-city-buildings-in-melbourne-australia-or-resize.png" translatesAutoresizingMaskIntoConstraints="NO" id="XPQ-bc-KsE">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d6B-a1-DFA">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6B-a1-DFA">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EdD-PU-a11">

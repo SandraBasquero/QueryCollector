@@ -51,6 +51,8 @@
 		B61604221D3EA6F50061C382 /* SBSCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B61604211D3EA6F50061C382 /* SBSCityModel.m */; };
 		B61604251D3EA9120061C382 /* SBSCityData.m in Sources */ = {isa = PBXBuildFile; fileRef = B61604241D3EA9120061C382 /* SBSCityData.m */; };
 		B61604281D3EAE830061C382 /* SBSSyncroData.m in Sources */ = {isa = PBXBuildFile; fileRef = B61604271D3EAE830061C382 /* SBSSyncroData.m */; };
+		B6308A731D6E21ED00316EFE /* SBSAnswerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6308A721D6E21ED00316EFE /* SBSAnswerModel.m */; };
+		B6308A761D6E249800316EFE /* SBSAnswerData.m in Sources */ = {isa = PBXBuildFile; fileRef = B6308A751D6E249800316EFE /* SBSAnswerData.m */; };
 		B66748F21D5202B000BC5750 /* 5655-close-up-of-an-isolated-sunflower-pv.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B66748EE1D5202B000BC5750 /* 5655-close-up-of-an-isolated-sunflower-pv.jpg */; };
 		B66748F41D5202B000BC5750 /* 9536-a-strawberry-splashing-in-water-or.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B66748F01D5202B000BC5750 /* 9536-a-strawberry-splashing-in-water-or.jpg */; };
 		B66748F71D5203D500BC5750 /* 6957-illustration-of-a-city-skyline-or.png in Resources */ = {isa = PBXBuildFile; fileRef = B66748F61D5203D500BC5750 /* 6957-illustration-of-a-city-skyline-or.png */; };
@@ -174,6 +176,10 @@
 		B61604241D3EA9120061C382 /* SBSCityData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSCityData.m; sourceTree = "<group>"; };
 		B61604261D3EAE830061C382 /* SBSSyncroData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSSyncroData.h; sourceTree = "<group>"; };
 		B61604271D3EAE830061C382 /* SBSSyncroData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSSyncroData.m; sourceTree = "<group>"; };
+		B6308A711D6E21ED00316EFE /* SBSAnswerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSAnswerModel.h; sourceTree = "<group>"; };
+		B6308A721D6E21ED00316EFE /* SBSAnswerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSAnswerModel.m; sourceTree = "<group>"; };
+		B6308A741D6E249800316EFE /* SBSAnswerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSAnswerData.h; sourceTree = "<group>"; };
+		B6308A751D6E249800316EFE /* SBSAnswerData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSAnswerData.m; sourceTree = "<group>"; };
 		B66748EE1D5202B000BC5750 /* 5655-close-up-of-an-isolated-sunflower-pv.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "5655-close-up-of-an-isolated-sunflower-pv.jpg"; sourceTree = "<group>"; };
 		B66748F01D5202B000BC5750 /* 9536-a-strawberry-splashing-in-water-or.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "9536-a-strawberry-splashing-in-water-or.jpg"; sourceTree = "<group>"; };
 		B66748F61D5203D500BC5750 /* 6957-illustration-of-a-city-skyline-or.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6957-illustration-of-a-city-skyline-or.png"; sourceTree = "<group>"; };
@@ -442,6 +448,8 @@
 			children = (
 				B61604231D3EA9120061C382 /* SBSCityData.h */,
 				B61604241D3EA9120061C382 /* SBSCityData.m */,
+				B6308A741D6E249800316EFE /* SBSAnswerData.h */,
+				B6308A751D6E249800316EFE /* SBSAnswerData.m */,
 			);
 			path = Datas;
 			sourceTree = "<group>";
@@ -453,6 +461,8 @@
 				B61604211D3EA6F50061C382 /* SBSCityModel.m */,
 				B6E6BC4C1D3FD64B004E5D1B /* SBSSessionActivityModel.h */,
 				B6E6BC4D1D3FD64B004E5D1B /* SBSSessionActivityModel.m */,
+				B6308A711D6E21ED00316EFE /* SBSAnswerModel.h */,
+				B6308A721D6E21ED00316EFE /* SBSAnswerModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -666,7 +676,9 @@
 				B6D191771D50B3E700A88162 /* SBSSlide1Query2VC.m in Sources */,
 				957768291D2CF524006FE5A0 /* FMDatabaseAdditions.m in Sources */,
 				B68053E51D47853F0023DBFC /* SBSSlideBaseVC.m in Sources */,
+				B6308A731D6E21ED00316EFE /* SBSAnswerModel.m in Sources */,
 				B6E6BC4E1D3FD64B004E5D1B /* SBSSessionActivityModel.m in Sources */,
+				B6308A761D6E249800316EFE /* SBSAnswerData.m in Sources */,
 				957768371D2CF524006FE5A0 /* ReaderMainToolbar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
