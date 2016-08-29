@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SBSAnswerModel.h"
 
 @interface SBSSyncroData : NSObject
 
 -(NSArray*)getCitiesUpdated;
-
+-(void)aQuestionIsAnswered:(SBSAnswerModel*)answerModel;
 @end

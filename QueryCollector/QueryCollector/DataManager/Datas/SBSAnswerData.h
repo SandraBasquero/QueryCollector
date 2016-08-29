@@ -7,9 +7,13 @@
 //
 
 #import "DatabaseAccess.h"
+#import "SBSAnswerModel.h"
 
 @interface SBSAnswerData : DatabaseAccess
 
 -(void)createTable;
+
+//Insert new answer in local db
+-(BOOL)insertNewAnswer:(SBSAnswerModel*)answer;
 
 @end

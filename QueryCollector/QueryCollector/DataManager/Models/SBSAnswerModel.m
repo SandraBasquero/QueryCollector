@@ -11,8 +11,8 @@
 @implementation SBSAnswerModel
 
 //Designado
--(id)initWithWorkshop:(NSString*) aCity
-              caseNum:(NSString*) aQueryNum
+-(id)initWithCity:(NSString*) aCity
+              queryNum:(NSString*) aQueryNum
           questionNum:(NSString*) aQuestionNum
                answer:(NSString*) theAnswer
            textAnswer:(NSString*) text

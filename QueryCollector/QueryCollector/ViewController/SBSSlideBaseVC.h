@@ -10,12 +10,13 @@
 #import "SBSQueryMasterVC.h"
 
 #import "SBSSessionActivityModel.h"
+#import "SBSSyncroData.h"
 
 @interface SBSSlideBaseVC : UIViewController
 
 @property (nonatomic) SBSQueryMasterVC *masterVC;
 @property SBSSessionActivityModel *sessionHandler;
-
+@property SBSSyncroData *syncData;
 
 //Styles
 -(void)customBorderStyles:(NSArray*)elements;

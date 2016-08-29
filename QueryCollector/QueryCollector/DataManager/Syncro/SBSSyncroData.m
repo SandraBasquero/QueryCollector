@@ -9,6 +9,9 @@
 #import "SBSSyncroData.h"
 #import "SBSApiDataManager.h"
 #import "SBSCityData.h"
+#import "SBSAnswerData.h"
+
+#import "Reachability.h"
 
 @implementation SBSSyncroData
 
@@ -25,5 +28,31 @@
     return listBack;
 }
 
+#pragma mark - Answer
 
+//Check if an answer was created and insert it to local db and update Pending
+-(void)aQuestionIsAnswered:(SBSAnswerModel*)answerModel {
+    answerModel.pending = @"true";
+    SBSAnswerData *answData = [SBSAnswerData new];
+    /*if ([answData getAnswerFromLocalDB:answerModel]) {  //TODO: poner otro nombre al metodo -> isAnswerInLocalDB o algo así
+        [answData updateAnswerAndPendingState:answerModel]; //in local DB
+    } else {
+        [answData insertNewAnswer:answerModel]; //in local DB
+    }*/
+    [answData insertNewAnswer:answerModel]; //in local DB
+}
+
+
+#pragma mark - Internet
+
+-(BOOL)internetState {
+    if ([[Reachability reachabilityForInternetConnection]currentReachabilityStatus]==NotReachable) {
+        NSLog(@"NO TENGO INTERNET");
+        return  false;
+    }
+    else {
+        NSLog(@"SI TENGO INTERNET");
+        return true;
+    }
+}
 @end

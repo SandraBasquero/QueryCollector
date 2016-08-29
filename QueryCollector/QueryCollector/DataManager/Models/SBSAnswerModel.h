@@ -20,13 +20,13 @@
 @property NSString *pending; //BOOL
 
 //Designado
--(id)initWithWorkshop:(NSString*) aCity
-              caseNum:(NSString*) aQueryNum
-          questionNum:(NSString*) aQuestionNum
-               answer:(NSString*) theAnswer
-           textAnswer:(NSString*) text
-               userID:(NSString*) aUser
-              pending:(NSString*) pend;
+-(id)initWithCity:(NSString*) aCity
+         queryNum:(NSString*) aQueryNum
+      questionNum:(NSString*) aQuestionNum
+           answer:(NSString*) theAnswer
+       textAnswer:(NSString*) text
+           userID:(NSString*) aUser
+          pending:(NSString*) pend;
 
 
 @end
