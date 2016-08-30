@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
@@ -22,8 +22,8 @@
                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                     <color key="backgroundColor" red="1" green="0.97497840520000001" blue="0.5065907865" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6I-9S-yWc">
-                    <rect key="frame" x="112" y="356.5" width="333" height="56.5"/>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6I-9S-yWc">
+                    <rect key="frame" x="112" y="357" width="333" height="56"/>
                     <color key="backgroundColor" red="0.65491469560422166" green="0.88609287443590379" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
                     <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
@@ -34,8 +34,8 @@
                         <action selector="btnsAction:" destination="-1" eventType="touchUpInside" id="grA-ja-Zzw"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="El7-Vg-bWf">
-                    <rect key="frame" x="580" y="356.5" width="333" height="56.5"/>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="El7-Vg-bWf">
+                    <rect key="frame" x="580" y="357" width="333" height="56"/>
                     <color key="backgroundColor" red="0.65491469560000004" green="0.88609287439999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
                     <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
@@ -46,8 +46,8 @@
                         <action selector="btnsAction:" destination="-1" eventType="touchUpInside" id="tZ9-ts-IQB"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjq-mv-G9a">
-                    <rect key="frame" x="112" y="544.5" width="333" height="56.5"/>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjq-mv-G9a">
+                    <rect key="frame" x="112" y="545" width="333" height="56"/>
                     <color key="backgroundColor" red="0.65491469560000004" green="0.88609287439999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
                     <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
@@ -58,8 +58,8 @@
                         <action selector="btnsAction:" destination="-1" eventType="touchUpInside" id="XJI-yu-aNO"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5Q-I0-ITi">
-                    <rect key="frame" x="580" y="544" width="333" height="56.5"/>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5Q-I0-ITi">
+                    <rect key="frame" x="580" y="544" width="333" height="57"/>
                     <color key="backgroundColor" red="0.65491469560000004" green="0.88609287439999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
                     <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>

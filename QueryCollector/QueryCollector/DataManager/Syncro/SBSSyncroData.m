@@ -34,12 +34,11 @@
 -(void)aQuestionIsAnswered:(SBSAnswerModel*)answerModel {
     answerModel.pending = @"true";
     SBSAnswerData *answData = [SBSAnswerData new];
-    /*if ([answData getAnswerFromLocalDB:answerModel]) {  //TODO: poner otro nombre al metodo -> isAnswerInLocalDB o algo así
-        [answData updateAnswerAndPendingState:answerModel]; //in local DB
+    if ([answData isAnswerInLocalDB:answerModel]) {
+        [answData updateAnswerAndPendingInLocalDBFor:answerModel];
     } else {
         [answData insertNewAnswer:answerModel]; //in local DB
-    }*/
-    [answData insertNewAnswer:answerModel]; //in local DB
+    }
 }
 
 

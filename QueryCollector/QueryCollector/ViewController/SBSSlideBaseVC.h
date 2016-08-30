@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "SBSQueryMasterVC.h"
-
 #import "SBSSessionActivityModel.h"
+#import "SBSAnswerModel.h"
+
 #import "SBSSyncroData.h"
 
 @interface SBSSlideBaseVC : UIViewController
@@ -25,4 +26,8 @@
 //Buttons Actions
 -(void)selectOne:(UIButton*)sender inCollection:(NSArray*)collection;
 -(void)selectOne:(UIButton*)sender;
+
+
+-(SBSAnswerModel*)buildAnswer:(long)numAnswer
+                   inQuestion:(int)numQuestion;
 @end

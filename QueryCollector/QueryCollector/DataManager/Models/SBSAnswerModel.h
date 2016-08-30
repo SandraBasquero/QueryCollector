@@ -27,6 +27,9 @@
        textAnswer:(NSString*) text
            userID:(NSString*) aUser
           pending:(NSString*) pend;
-
-
+/*
+//Conveniencia
+-(id)initWhithCity:(NSString*) aCity
+       andQueryNum:(NSString*) queryNum
+           forUser:(NSString*) userId;*/
 @end

@@ -25,7 +25,8 @@
     self.firstTime = true;
 }
 
-- (IBAction)btnsAction:(id)sender {
+- (IBAction)btnsAction:(UIButton*)sender {
+    
     if (self.firstTime) {
         for (UIButton *btn in self.answerBtnArray) {
             btn.selected = false;
@@ -34,6 +35,10 @@
         self.firstTime = false;
     }
     [self selectOne:sender];
+    
+    //Save answer to local db
+    self.syncData = [SBSSyncroData new]; //Declarado en el padre CCCSlideBaseVC
+    [self.syncData aQuestionIsAnswered:[self buildAnswer:sender.tag inQuestion:2]];
 }
 
 @end

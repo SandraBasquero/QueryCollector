@@ -21,7 +21,9 @@
     [self customBorderStyles:self.answerBtnArray];
 }
 
-- (IBAction)btnsAction:(id)sender {
+- (IBAction)btnsAction:(UIButton*)sender {
+    self.syncData = [SBSSyncroData new]; //Declarado en el padre CCCSlideBaseVC
+    [self.syncData aQuestionIsAnswered:[self buildAnswer:sender.tag inQuestion:3]];
     [self selectOne:sender inCollection:self.answerBtnArray];
 }
 

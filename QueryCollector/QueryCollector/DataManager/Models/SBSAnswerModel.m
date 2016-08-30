@@ -31,5 +31,19 @@
     return self;
 }
 
+/*
+//Conveniencia
+-(id)initWhithCity:(NSString*) aCity
+       andQueryNum:(NSString*) queryNum
+           forUser:(NSString*) userId {
+    return [self initWithCity:aCity
+                     queryNum:queryNum
+                  questionNum:@""
+                       answer:@""
+                   textAnswer:@""
+                       userID:userId
+                      pending:@""];
+}*/
+
 
 @end

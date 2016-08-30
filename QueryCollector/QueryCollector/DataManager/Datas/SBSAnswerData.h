@@ -13,7 +13,8 @@
 
 -(void)createTable;
 
-//Insert new answer in local db
--(BOOL)insertNewAnswer:(SBSAnswerModel*)answer;
 
+-(BOOL)insertNewAnswer:(SBSAnswerModel*)answer;
+-(BOOL)isAnswerInLocalDB:(SBSAnswerModel*)answer;
+-(BOOL)updateAnswerAndPendingInLocalDBFor:(SBSAnswerModel*)answer;
 @end

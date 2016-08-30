@@ -65,4 +65,17 @@
     }
 }
 
+#pragma mark - Model Data Management
+
+-(SBSAnswerModel*)buildAnswer:(long)numAnswer
+                   inQuestion:(int)numQuestion {
+    
+    SBSAnswerModel *answer = [[SBSAnswerModel alloc] initWithCity:self.sessionHandler.citySelected queryNum:[NSString stringWithFormat:@"%d", self.sessionHandler.currentQuery] questionNum:[NSString stringWithFormat:@"%ld",(long)numQuestion] answer:[NSString stringWithFormat:@"%ld", (long)numAnswer] textAnswer:@"" userID:[self.sessionHandler.idForSession UUIDString] pending:@""];
+    
+    return answer;
+}
+
+
+
+
 @end
