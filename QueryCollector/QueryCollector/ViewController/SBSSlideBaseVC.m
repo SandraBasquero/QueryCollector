@@ -76,6 +76,20 @@
 }
 
 
-
+-(SBSAnswerModel*)buildMultiAnswers:(NSMutableArray*)numAnswers
+                   inQuestion:(int)numQuestion {
+    
+    NSString *answerString = @"";
+    for (NSNumber *an in numAnswers) {
+        if (![[numAnswers lastObject]isEqual:an]) {
+            answerString = [answerString stringByAppendingFormat:@"%@-", an];
+        } else {
+            answerString = [answerString stringByAppendingFormat:@"%@", an];
+        }
+    }
+    SBSAnswerModel *answer = [[SBSAnswerModel alloc] initWithCity:self.sessionHandler.citySelected queryNum:[NSString stringWithFormat:@"%d", self.sessionHandler.currentQuery] questionNum:[NSString stringWithFormat:@"%ld",(long)numQuestion] answer:answerString textAnswer:@"" userID:[self.sessionHandler.idForSession UUIDString] pending:@""];
+    
+    return answer;
+}
 
 @end

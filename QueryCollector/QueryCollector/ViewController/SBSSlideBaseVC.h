@@ -30,4 +30,6 @@
 
 -(SBSAnswerModel*)buildAnswer:(long)numAnswer
                    inQuestion:(int)numQuestion;
+-(SBSAnswerModel*)buildMultiAnswers:(NSMutableArray*)numAnswers
+                         inQuestion:(int)numQuestion;
 @end

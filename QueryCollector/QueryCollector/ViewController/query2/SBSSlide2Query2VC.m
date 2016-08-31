@@ -11,6 +11,7 @@
 @interface SBSSlide2Query2VC ()
 
 @property BOOL firstTime;
+@property NSMutableArray *answersArray;
 
 @end
 
@@ -23,6 +24,8 @@
     //Styles
     [self customBorderStyles:self.answerBtnArray];
     self.firstTime = true;
+    
+    self.answersArray = [NSMutableArray new];
 }
 
 - (IBAction)btnsAction:(UIButton*)sender {
@@ -36,9 +39,21 @@
     }
     [self selectOne:sender];
     
+    
+    [self answersList:sender.tag];
     //Save answer to local db
     self.syncData = [SBSSyncroData new]; //Declarado en el padre CCCSlideBaseVC
-    [self.syncData aQuestionIsAnswered:[self buildAnswer:sender.tag inQuestion:2]];
+    [self.syncData aQuestionIsAnswered:[self buildMultiAnswers:self.answersArray inQuestion:2]];
+}
+
+
+-(void)answersList:(long)tagBtn {
+    NSNumber *answ = [NSNumber numberWithLong:tagBtn];
+    if (![self.answersArray containsObject:answ]) {
+        [self.answersArray addObject:answ];
+    } else {
+        [self. answersArray removeObject:answ];
+    }
 }
 
 @end

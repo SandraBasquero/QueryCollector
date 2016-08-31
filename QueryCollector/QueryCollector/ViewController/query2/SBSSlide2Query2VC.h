@@ -11,6 +11,7 @@
 @interface SBSSlide2Query2VC : SBSSlideBaseVC
 
 
+
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *answerBtnArray;
 
 - (IBAction)btnsAction:(id)sender;
