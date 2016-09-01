@@ -32,4 +32,5 @@
                    inQuestion:(int)numQuestion;
 -(SBSAnswerModel*)buildMultiAnswers:(NSMutableArray*)numAnswers
                          inQuestion:(int)numQuestion;
+-(SBSAnswerModel*)checkAnswerForQuestion:(int)numQuestion;
 @end

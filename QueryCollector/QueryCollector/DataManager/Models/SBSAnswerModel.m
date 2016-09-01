@@ -45,5 +45,17 @@
                       pending:@""];
 }*/
 
+#pragma mark - Hydrates
+
+-(void)hydrateFromLocalDB:(FMResultSet*)results {
+    self.city = [results stringForColumn:@"city"];
+    self.queryNumber = [results stringForColumn:@"queryNumber"];
+    self.questionNumber = [results stringForColumn:@"questionNumber"];
+    self.answer = [results stringForColumn:@"answer"];
+    self.textAnswer = [results stringForColumn:@"textAnswer"];
+    self.userID = [results stringForColumn:@"userID"];
+    self.pending = [results stringForColumn:@"pending"];
+}
+
 
 @end

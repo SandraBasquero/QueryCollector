@@ -92,4 +92,13 @@
     return answer;
 }
 
+
+-(SBSAnswerModel*)checkAnswerForQuestion:(int)numQuestion {
+    
+    SBSAnswerModel *answer = [[SBSAnswerModel alloc]initWithCity:self.sessionHandler.citySelected queryNum:[NSString stringWithFormat:@"%d", self.sessionHandler.currentQuery] questionNum:[NSString stringWithFormat:@"%ld",(long)numQuestion] answer:@"" textAnswer:@"" userID:[self.sessionHandler.idForSession UUIDString] pending:@""];
+    return answer;
+}
+
+
+
 @end

@@ -13,4 +13,5 @@
 
 -(NSArray*)getCitiesUpdated;
 -(void)aQuestionIsAnswered:(SBSAnswerModel*)answerModel;
+-(SBSAnswerModel*)getAnswerForAQuestion:(SBSAnswerModel*)answerModel;
 @end

@@ -50,4 +50,29 @@
     return success;
 }
 
+//Get the answer of a specific question from local db
+-(SBSAnswerModel*)getAnswerOfAQuestionFromLocalDB:(SBSAnswerModel*)answer {
+    FMDatabase *database = [self getConnection];
+    FMResultSet *result = [database executeQuery:@"SELECT * FROM ANSWER WHERE city=? AND userID=? AND queryNumber=? AND questionNumber=?;",answer.city, answer.userID, answer.queryNumber, answer.questionNumber];
+    
+    SBSAnswerModel *dataAnswer;
+    BOOL success = false;
+    while ([result next]) {
+        SBSAnswerModel *ans = [SBSAnswerModel new];
+        [ans hydrateFromLocalDB:result];
+        dataAnswer = ans;
+        success = true;
+    }
+    [database close];
+    return dataAnswer;
+}
+
+
 @end
+
+
+
+
+
+
+

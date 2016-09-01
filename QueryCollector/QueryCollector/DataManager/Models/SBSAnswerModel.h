@@ -32,4 +32,7 @@
 -(id)initWhithCity:(NSString*) aCity
        andQueryNum:(NSString*) queryNum
            forUser:(NSString*) userId;*/
+
+-(void)hydrateFromLocalDB:(FMResultSet*)results;
+
 @end

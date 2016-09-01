@@ -17,4 +17,5 @@
 -(BOOL)insertNewAnswer:(SBSAnswerModel*)answer;
 -(BOOL)isAnswerInLocalDB:(SBSAnswerModel*)answer;
 -(BOOL)updateAnswerAndPendingInLocalDBFor:(SBSAnswerModel*)answer;
+-(SBSAnswerModel*)getAnswerOfAQuestionFromLocalDB:(SBSAnswerModel*)answer ;
 @end
