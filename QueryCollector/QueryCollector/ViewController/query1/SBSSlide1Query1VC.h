@@ -6,6 +6,7 @@
 //  Copyright © 2016 SBS. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "SBSSlideBaseVC.h"
 
 @interface SBSSlide1Query1VC : SBSSlideBaseVC

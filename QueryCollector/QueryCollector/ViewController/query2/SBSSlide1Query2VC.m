@@ -16,10 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    
     //Styles
     [self customBorderStyles:self.answerBtnArray];
+    
+    self.syncData = [SBSSyncroData new];
+    SBSAnswerModel *reqAnswer = [self.syncData getAnswerForAQuestion:[self checkAnswerForQuestion:1]];
+    [self autoSelectAnsweredBtn:reqAnswer inColection:self.answerBtnArray];
 }
 
 - (IBAction)btnsAction:(UIButton*)sender {

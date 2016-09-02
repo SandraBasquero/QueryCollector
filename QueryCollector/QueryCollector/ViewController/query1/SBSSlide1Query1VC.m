@@ -20,13 +20,8 @@
     
     self.syncData = [SBSSyncroData new];
     SBSAnswerModel *reqAnswer = [self.syncData getAnswerForAQuestion:[self checkAnswerForQuestion:1]];
-    for (UIButton *btn in self.answerBtnArray) {
-        if (btn.tag == [reqAnswer.answer intValue]) {
-            btn.selected = true;
-        }
-    }
+    [self autoSelectAnsweredBtn:reqAnswer inColection:self.answerBtnArray];
 }
-
 
 - (IBAction)btnsAction:(UIButton*)sender {
     self.syncData = [SBSSyncroData new]; //Declarado en el padre CCCSlideBaseVC

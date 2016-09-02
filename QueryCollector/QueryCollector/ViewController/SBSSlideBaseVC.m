@@ -65,6 +65,25 @@
     }
 }
 
+//Select the answer button already answered
+-(void) autoSelectAnsweredBtn:(SBSAnswerModel*)answerModel inColection:(NSArray*)answerBtnArray {
+    if (answerModel.answer.length != 0) {
+        for (UIButton *btn in answerBtnArray) {
+            if (btn.tag == [answerModel.answer intValue]) {
+                btn.selected = true;
+                [self buttonSelectedStyle:btn];
+            } else {
+                [self buttonUnselectedStyle:btn];
+            }
+        }
+    } else {
+        for (UIButton *btn in answerBtnArray) {
+            [self buttonSelectedStyle:btn];
+        }
+    }
+}
+
+
 #pragma mark - Model Data Management
 
 -(SBSAnswerModel*)buildAnswer:(long)numAnswer

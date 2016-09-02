@@ -22,6 +22,8 @@
 //Styles
 -(void)customBorderStyles:(NSArray*)elements;
 -(void)buttonUnselectedStyle:(UIButton*)btn;
+-(void)buttonSelectedStyle:(UIButton*)btn;
+-(void) autoSelectAnsweredBtn:(SBSAnswerModel*)answerModel inColection:(NSArray*)answerBtnArray;
 
 //Buttons Actions
 -(void)selectOne:(UIButton*)sender inCollection:(NSArray*)collection;

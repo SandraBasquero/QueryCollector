@@ -43,11 +43,6 @@
 
 
 -(SBSAnswerModel*)getAnswerForAQuestion:(SBSAnswerModel*)answerModel {
-    NSLog(@"answer con ciudad... %@",answerModel.city);
-    NSLog(@"answer con uuid... %@",answerModel.userID);
-    NSLog(@"answer con query... %@",answerModel.queryNumber);
-    NSLog(@"answer con question... %@",answerModel.questionNumber);
-    
     SBSAnswerModel *dataAnswer;
     SBSAnswerData *answData = [SBSAnswerData new];
     if ([answData isAnswerInLocalDB:answerModel]) {

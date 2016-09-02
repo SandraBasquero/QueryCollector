@@ -109,10 +109,13 @@
     self.querySelected = (int)sender.tag;
     
     if (![self.cityBtn.currentTitle isEqualToString:@"Selecciona la tuya"]) {
-        NSUUID *sessionId = [NSUUID new]; //Generate id for new session
+        
         //Singleton
         SBSSessionActivityModel *sessionActivity = [SBSSessionActivityModel sessionHandler];
-        sessionActivity.idForSession = sessionId;
+        if (![self.cityBtn.currentTitle isEqualToString:sessionActivity.citySelected]) {
+            NSUUID *sessionId = [NSUUID new]; //Generate id for new session
+            sessionActivity.idForSession = sessionId;
+        }
         sessionActivity.citySelected = self.cityBtn.currentTitle;
         sessionActivity.currentQuery = self.querySelected;
         
