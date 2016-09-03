@@ -26,6 +26,10 @@
     self.firstTime = true;
     
     self.answersArray = [NSMutableArray new];
+    
+    self.syncData = [SBSSyncroData new];
+    SBSAnswerModel *reqAnswer = [self.syncData getAnswerForAQuestion:[self checkAnswerForQuestion:2]];
+    [self autoSelectAnsweredBtnsMulti:reqAnswer inColection:self.answerBtnArray];
 }
 
 - (IBAction)btnsAction:(UIButton*)sender {

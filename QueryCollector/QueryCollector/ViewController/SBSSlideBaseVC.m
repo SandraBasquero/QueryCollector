@@ -83,6 +83,32 @@
     }
 }
 
+//Select the answer button already answered
+-(void) autoSelectAnsweredBtnsMulti:(SBSAnswerModel*)answerModel inColection:(NSArray*)answerBtnArray {
+    
+    NSArray *answersArray = [NSArray new];
+    answersArray = [answerModel.answer componentsSeparatedByString:@"-"];
+    
+    if (answerModel.answer.length != 0) {
+        for (UIButton *btn in answerBtnArray) {
+            [self buttonUnselectedStyle:btn];
+            btn.selected = false;
+        }
+        for (UIButton *btn in answerBtnArray) {
+            for (NSString *ansString in answersArray) {
+                if (btn.tag == [ansString intValue]) {
+                    btn.selected = true;
+                    [self buttonSelectedStyle:btn];
+                }
+            }
+        }
+        
+    } else {
+        for (UIButton *btn in answerBtnArray) {
+            [self buttonSelectedStyle:btn];
+        }
+    }
+}
 
 #pragma mark - Model Data Management
 
