@@ -37,7 +37,7 @@
     
     if (self.firstTime) {
         NSArray *temporal =[[self.reqAnswer.answer componentsSeparatedByString:@"-"]copy];
-        if ([temporal count] == 0) {
+        if ([temporal count] == 0 || [[temporal objectAtIndex:0] isEqualToString:@""] || [temporal objectAtIndex:0] == nil) {
             for (UIButton *btn in self.answerBtnArray) {
                 btn.selected = false;
                 [self buttonUnselectedStyle:btn];
