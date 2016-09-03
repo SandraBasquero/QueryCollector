@@ -12,6 +12,7 @@
 
 @property BOOL firstTime;
 @property NSMutableArray *answersArray;
+@property SBSAnswerModel *reqAnswer;
 
 @end
 
@@ -28,21 +29,28 @@
     self.answersArray = [NSMutableArray new];
     
     self.syncData = [SBSSyncroData new];
-    SBSAnswerModel *reqAnswer = [self.syncData getAnswerForAQuestion:[self checkAnswerForQuestion:2]];
-    [self autoSelectAnsweredBtnsMulti:reqAnswer inColection:self.answerBtnArray];
+    self.reqAnswer = [self.syncData getAnswerForAQuestion:[self checkAnswerForQuestion:2]];
+    [self autoSelectAnsweredBtnsMulti:self.reqAnswer inColection:self.answerBtnArray];
 }
 
 - (IBAction)btnsAction:(UIButton*)sender {
     
     if (self.firstTime) {
-        for (UIButton *btn in self.answerBtnArray) {
-            btn.selected = false;
-            [self buttonUnselectedStyle:btn];
+        NSArray *temporal =[[self.reqAnswer.answer componentsSeparatedByString:@"-"]copy];
+        if ([temporal count] == 0) {
+            for (UIButton *btn in self.answerBtnArray) {
+                btn.selected = false;
+                [self buttonUnselectedStyle:btn];
+            }
+        } else {
+            for (NSString *answString in temporal) {
+                [self answersList:[answString intValue]];
+            }
         }
         self.firstTime = false;
     }
-    [self selectOne:sender];
     
+    [self selectOne:sender];
     
     [self answersList:sender.tag];
     //Save answer to local db
