@@ -25,6 +25,8 @@
     [self setBorderToButton:self.cityBtn];
     [self setBorderToButton:self.query1Btn];
     [self setBorderToButton:self.query2Btn];
+    self.otherUserBtn.layer.borderWidth = 1.0f;
+    [[self.otherUserBtn layer] setBorderColor: [UIColor blackColor].CGColor];
     self.cityBtn.titleLabel.font = [UIFont fontWithName:@"AvenirNext-DemiBold" size:22];
     
     //Sync data
@@ -101,11 +103,24 @@
     [[btn layer] setBorderColor: [UIColor blackColor].CGColor];
 }
 
+- (IBAction)newUser:(UIButton*)sender {
+    if (![self.cityBtn.currentTitle isEqualToString:@"Selecciona la tuya"]) {
+        //Singleton
+        SBSSessionActivityModel *sessionActivity = [SBSSessionActivityModel sessionHandler];
+        NSUUID *sessionId = [NSUUID new]; //Generate id for new session
+        sessionActivity.idForSession = sessionId;
+        sender.enabled = false;
+        sender.alpha = 0.5;
+    }
+}
 
 
 #pragma mark - Navigation
  
 -(IBAction)goToQueries:(UIButton*)sender {
+    self.otherUserBtn.enabled = true;
+    self.otherUserBtn.alpha = 1;
+    
     self.querySelected = (int)sender.tag;
     
     if (![self.cityBtn.currentTitle isEqualToString:@"Selecciona la tuya"]) {

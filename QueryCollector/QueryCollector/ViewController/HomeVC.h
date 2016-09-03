@@ -19,6 +19,12 @@
 @property (weak, nonatomic) IBOutlet UITableView *cityTable;
 @property (strong, nonatomic) NSMutableArray *citiesArray;
 
+
+
+@property (weak, nonatomic) IBOutlet UIButton *otherUserBtn;
+- (IBAction)newUser:(id)sender;
+
+
 @property (weak, nonatomic) IBOutlet UIButton *query1Btn;
 @property (weak, nonatomic) IBOutlet UIButton *query2Btn;
 
