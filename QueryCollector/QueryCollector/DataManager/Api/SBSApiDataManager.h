@@ -11,5 +11,6 @@
 
 @interface SBSApiDataManager : NSObject
 
+-(BOOL)sendAnwers:(NSMutableArray*)answerArray;
 -(NSArray*) getCitiesFromServer;
 @end

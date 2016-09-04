@@ -90,6 +90,21 @@
     return jsonResponse;
 }
 
+#pragma mark - Answer
+
+//Send an array with answer/s to Server
+-(BOOL)sendAnwers:(NSMutableArray*)answerArray {
+    /*NSDictionary *jsonToSend = [self callRequest:@"setAnswer" andContentArray:answerArray];
+    BOOL success;
+    if (jsonToSend != nil && [[jsonToSend objectForKey:@"success"] boolValue] == true) {
+        NSLog(@"Respuestas guardadas guay en el Server");
+        success = true;
+    } else if (jsonToSend == nil || [[jsonToSend objectForKey:@"success"] boolValue] == false) {
+        NSLog(@"Las respuestas NO se han guardado!");
+        success = false;
+    }*/
+    return true; //success;
+}
 
 #pragma mark - Cities
 -(NSArray*) getCitiesFromServer {

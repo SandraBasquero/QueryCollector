@@ -57,5 +57,29 @@
     self.pending = [results stringForColumn:@"pending"];
 }
 
+#pragma mark - To Json
 
+/*-(NSDictionary*)toJson:(SBSAnswerModel*)answ {
+    return @{
+             @"city":answ.city,
+             @"queryNumber":answ.queryNumber,
+             @"questionNumber":answ.questionNumber,
+             @"answer":answ.answer,
+             @"textAnswer":answ.textAnswer,
+             @"userID":answ.userID,
+             @"pending":answ.pending
+             };
+}*/
+
+-(NSDictionary*)toJson:(FMResultSet*)results {
+    return @{
+             @"city":[results stringForColumn:@"city"],
+             @"queryNumber":[results stringForColumn:@"queryNumber"],
+             @"questionNumber":[results stringForColumn:@"questionNumber"],
+             @"answer":[results stringForColumn:@"answer"],
+             @"textAnswer":[results stringForColumn:@"textAnswer"],
+             @"userID":[results stringForColumn:@"userID"],
+             @"pending":[results stringForColumn:@"pending"]
+             };
+}
 @end

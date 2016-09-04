@@ -67,6 +67,21 @@
     return dataAnswer;
 }
 
+//Get answer with "pending = true" in local DB
+-(NSMutableArray*)getAnswersPending {
+    FMDatabase *database = [self getConnection];
+    FMResultSet *result = [database executeQuery:@"SELECT * FROM Answer WHERE pending=?;",@"true"];
+    
+    NSMutableArray *answerPendingArray = [NSMutableArray new];
+    BOOL success = false;
+    while ([result next]) {
+        SBSAnswerModel * ans = [SBSAnswerModel new];
+        [answerPendingArray addObject:[ans toJson:result]];
+        success = true;
+    }
+    [database close];
+    return answerPendingArray;
+}
 
 @end
 

@@ -14,4 +14,6 @@
 -(NSArray*)getCitiesUpdated;
 -(void)aQuestionIsAnswered:(SBSAnswerModel*)answerModel;
 -(SBSAnswerModel*)getAnswerForAQuestion:(SBSAnswerModel*)answerModel;
+-(BOOL)sendAnswersPendingToServer;
+
 @end

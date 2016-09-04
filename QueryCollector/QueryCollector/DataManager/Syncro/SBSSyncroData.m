@@ -53,6 +53,30 @@
     return dataAnswer;
 }
 
+//Send pending answers to Server if there's Internet connection
+-(BOOL)sendAnswersPendingToServer {
+    if ([self internetState]) {
+        SBSAnswerData *answData = [SBSAnswerData new];
+        NSMutableArray *answersPendingArray = [answData getAnswersPending];
+        //NSLog(@"number of trues %lu ",(unsigned long)answersPendingArray.count);
+        
+        BOOL success = [[SBSApiDataManager new]sendAnwers:answersPendingArray];
+        if (success) {
+            /*for (CCCAnswerModel *an in answersPendingArray) {
+                an.pending = @"false";
+                [answData updatePendingStateOf:an];
+            }*/
+            NSLog(@"YEEEEEEEEEES");
+        } else {
+            // no se envia o no entrega bien en el server
+            NSLog(@"NOOOOOOOOO");
+            success = false;
+        }
+        return success;
+    } else {
+        return  false;
+    }
+}
 
 #pragma mark - Internet
 

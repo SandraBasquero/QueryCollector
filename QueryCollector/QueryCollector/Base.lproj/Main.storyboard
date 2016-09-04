@@ -148,6 +148,17 @@
                                     <action selector="backHome:" destination="u6N-us-0tc" eventType="touchUpInside" id="fok-4w-0rQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xC6-gg-YFT">
+                                <rect key="frame" x="41" y="684" width="87" height="43"/>
+                                <color key="backgroundColor" red="1" green="0.94872733499999995" blue="0.66850223259999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBoldItalic" family="Avenir Next" pointSize="18"/>
+                                <state key="normal" title="Enviar">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendAnswersAction:" destination="u6N-us-0tc" eventType="touchUpInside" id="mwL-mv-7tD"/>
+                                </connections>
+                            </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="vGf-JO-zlQ">
                                 <rect key="frame" x="492" y="727" width="39" height="37"/>
                                 <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -165,6 +176,7 @@
                         <outlet property="backHomeBtn" destination="EdD-PU-a11" id="xMx-6S-cHQ"/>
                         <outlet property="bullets" destination="vGf-JO-zlQ" id="lUX-1v-h8C"/>
                         <outlet property="masterScroll" destination="d6B-a1-DFA" id="CLO-Bc-jNY"/>
+                        <outlet property="sendAnswersBtn" destination="xC6-gg-YFT" id="nCN-FA-lWc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LzD-Uz-iUX" userLabel="First Responder" sceneMemberID="firstResponder"/>

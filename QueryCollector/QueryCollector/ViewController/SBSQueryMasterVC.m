@@ -17,6 +17,9 @@
 #import "SBSSlide2Query2VC.h"
 #import "SBSSlide3Query2VC.h"
 
+#import "SBSSyncroData.h"
+
+
 @interface SBSQueryMasterVC ()
 
 @end
@@ -134,5 +137,10 @@
     self.bullets.currentPage = self.currentSlide;
 }
 
+#pragma mark - Data Management
+
+- (IBAction)sendAnswersAction:(id)sender {
+    [[SBSSyncroData new] sendAnswersPendingToServer];
+}
 
 @end

@@ -25,4 +25,7 @@
 - (IBAction)backHome:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *backHomeBtn;
 
+- (IBAction)sendAnswersAction:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *sendAnswersBtn;
+
 @end
