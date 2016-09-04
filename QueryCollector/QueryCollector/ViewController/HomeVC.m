@@ -109,6 +109,9 @@
         SBSSessionActivityModel *sessionActivity = [SBSSessionActivityModel sessionHandler];
         NSUUID *sessionId = [NSUUID new]; //Generate id for new session
         sessionActivity.idForSession = sessionId;
+        sessionActivity.currentSlide = 0;
+        sessionActivity.currentSlide2 = 0;
+
         sender.enabled = false;
         sender.alpha = 0.5;
     }
@@ -130,6 +133,8 @@
         if (![self.cityBtn.currentTitle isEqualToString:sessionActivity.citySelected]) {
             NSUUID *sessionId = [NSUUID new]; //Generate id for new session
             sessionActivity.idForSession = sessionId;
+            sessionActivity.currentSlide = 0;
+            sessionActivity.currentSlide2 = 0;
         }
         sessionActivity.citySelected = self.cityBtn.currentTitle;
         sessionActivity.currentQuery = self.querySelected;

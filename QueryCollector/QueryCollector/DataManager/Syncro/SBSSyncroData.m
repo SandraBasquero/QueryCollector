@@ -47,10 +47,8 @@
     SBSAnswerData *answData = [SBSAnswerData new];
     if ([answData isAnswerInLocalDB:answerModel]) {
         dataAnswer = [answData getAnswerOfAQuestionFromLocalDB:answerModel];
-        NSLog(@"está en la bd");
     } else {
         dataAnswer = nil;
-        NSLog(@"NO ESTAAAAA"); 
     }
     return dataAnswer;
 }

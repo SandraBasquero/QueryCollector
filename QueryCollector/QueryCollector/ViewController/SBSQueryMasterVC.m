@@ -48,7 +48,6 @@
         [self.masterScroll setContentSize:CGSizeMake(1024 * self.query2SlidesArray.count, 768)];
         self.masterScroll.delegate = self;
         self.bullets.numberOfPages = [self.query2SlidesArray count];
-        
         [self renderLastVisited]; //Show directly the last view visited in the masterScroll.
     }
 }
