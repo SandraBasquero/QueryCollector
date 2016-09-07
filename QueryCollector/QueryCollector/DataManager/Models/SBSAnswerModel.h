@@ -34,6 +34,7 @@
            forUser:(NSString*) userId;*/
 
 -(void)hydrateFromLocalDB:(FMResultSet*)results;
+-(void)hydrateFromJson:(NSDictionary*)results;
 -(NSDictionary*)toJson:(FMResultSet*)results;
 
 @end

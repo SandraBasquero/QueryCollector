@@ -60,12 +60,15 @@
         NSMutableArray *answersPendingArray = [answData getAnswersPending];
         //NSLog(@"number of trues %lu ",(unsigned long)answersPendingArray.count);
         
+        //Sending all answers to Server
         BOOL success = [[SBSApiDataManager new]sendAnwers:answersPendingArray];
         if (success) {
-            /*for (CCCAnswerModel *an in answersPendingArray) {
+            for (int i = 0; i < answersPendingArray.count; i++) {
+                SBSAnswerModel *an = [SBSAnswerModel new];
+                [an hydrateFromJson:[answersPendingArray objectAtIndex:i]];
                 an.pending = @"false";
                 [answData updatePendingStateOf:an];
-            }*/
+            }
             NSLog(@"YEEEEEEEEEES");
         } else {
             // no se envia o no entrega bien en el server

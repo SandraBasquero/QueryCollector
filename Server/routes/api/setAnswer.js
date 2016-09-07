@@ -10,24 +10,19 @@ exports = module.exports = function(req, res) {
 	//Get data from the app
 	var data = (req.method == 'POST') ? req.body : req.query;
 
-
   console.log(data);
-  
-  /*
     //Variables
     var doneControl = 0;
 
     var insertOrUpdateAnswer = function(data) {
-        CCAnswer.model.findOne({workshop: data.workshop, userID: data.userID, caseNumber: data.caseNumber, questionNumber: data.questionNumber}, function(err, result) {
+        Answer.model.findOne({city: data.city, userID: data.userID, queryNumber: data.queryNumber, questionNumber: data.questionNumber}, function(err, result) {
             if( err || !result) {
                 //console.log("------- No existía antes -------");
-                var newAnswer = CCAnswer.model({
-                    workshop: data.workshop,
-                    questionAnswered: data.questionAnswered,
-                    caseNumber: data.caseNumber,
+                var newAnswer = Answer.model({
+                    city: data.city,
+                    queryNumber: data.queryNumber,
                     questionNumber: data.questionNumber,
                     answer: data.answer,
-                    caseNumber: data.caseNumber,
                     textAnswer: data.textAnswer,
                     userID: data.userID,
                     pending: data.pending
@@ -63,10 +58,10 @@ exports = module.exports = function(req, res) {
                 });
             };
         });
-    }*/
+    }
 
 
-    /*//Response back to app
+    //Response back to app
     var allSaved = function(status) {
         doneControl++;
         if (doneControl == data.length) {
@@ -84,6 +79,6 @@ exports = module.exports = function(req, res) {
         };
     } else {
         res.send({success: false});
-    }*/
+    }
 
 };

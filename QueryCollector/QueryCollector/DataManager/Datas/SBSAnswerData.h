@@ -19,4 +19,6 @@
 -(BOOL)updateAnswerAndPendingInLocalDBFor:(SBSAnswerModel*)answer;
 -(SBSAnswerModel*)getAnswerOfAQuestionFromLocalDB:(SBSAnswerModel*)answer ;
 -(NSMutableArray*)getAnswersPending;
+
+-(BOOL)updatePendingStateOf:(SBSAnswerModel*)answer;
 @end

@@ -57,6 +57,16 @@
     self.pending = [results stringForColumn:@"pending"];
 }
 
+-(void)hydrateFromJson:(NSDictionary*)results {
+    self.city = [results valueForKey:@"city"];
+    self.queryNumber = [results valueForKey:@"queryNumber"];
+    self.questionNumber = [results valueForKey:@"questionNumber"];
+    self.answer = [results valueForKey:@"answer"];
+    self.textAnswer = [results valueForKey:@"textAnswer"];
+    self.userID = [results valueForKey:@"userID"];
+    self.pending = [results valueForKey:@"pending"];
+}
+
 #pragma mark - To Json
 
 /*-(NSDictionary*)toJson:(SBSAnswerModel*)answ {

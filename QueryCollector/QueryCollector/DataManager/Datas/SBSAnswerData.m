@@ -70,7 +70,7 @@
 //Get answer with "pending = true" in local DB
 -(NSMutableArray*)getAnswersPending {
     FMDatabase *database = [self getConnection];
-    FMResultSet *result = [database executeQuery:@"SELECT * FROM Answer WHERE pending=?;",@"true"];
+    FMResultSet *result = [database executeQuery:@"SELECT * FROM ANSWER WHERE pending=?;",@"true"];
     
     NSMutableArray *answerPendingArray = [NSMutableArray new];
     BOOL success = false;
@@ -81,6 +81,17 @@
     }
     [database close];
     return answerPendingArray;
+}
+
+//Update pending state of an answer
+-(BOOL)updatePendingStateOf:(SBSAnswerModel*)answer {
+    FMDatabase *database = [self getConnection];
+    BOOL success = true;
+    
+    success = [database executeUpdate:@"UPDATE ANSWER SET pending=? WHERE city=? AND userID=? AND queryNumber=? AND questionNumber=? AND answer=?;", answer.pending, answer.city, answer.userID, answer.queryNumber, answer.questionNumber, answer.answer];
+    
+    [database close];
+    return success;
 }
 
 @end
