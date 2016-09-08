@@ -18,6 +18,7 @@
 #import "SBSSlide3Query2VC.h"
 
 #import "SBSSyncroData.h"
+#import "SBSStaticsScrollVC.h"
 
 
 @interface SBSQueryMasterVC ()
@@ -34,7 +35,8 @@
     
     //Styles
     [self setBorderToButton:self.backHomeBtn];
-    [self setBorderToButton: self.sendAnswersBtn];
+    [self setBorderToButton:self.sendAnswersBtn];
+    [self setBorderToButton:self.sendBtn];
     
     if (sessionActivity.currentQuery == 1) {
         self.query1SlidesArray = [[NSMutableArray alloc]init];
@@ -138,6 +140,19 @@
     self.bullets.currentPage = self.currentSlide;
 }
 
+- (IBAction)sendAction:(id)sender {
+    //Singleton
+    SBSSessionActivityModel *sessionHandler = [SBSSessionActivityModel sessionHandler];
+    sessionHandler.currentSlide = self.currentSlide;
+    //....................................
+    //Syncronization
+    //[[CCCSyncroData new] getStats];
+    
+    SBSStaticsScrollVC *statsVC = [SBSStaticsScrollVC new];
+    [self.navigationController pushViewController:statsVC animated:false];
+}
+
+
 #pragma mark - Data Management
 
 - (IBAction)sendAnswersAction:(id)sender {
@@ -149,5 +164,6 @@
         self.sendAnswersBtn.alpha = 1;
     }
 }
+
 
 @end

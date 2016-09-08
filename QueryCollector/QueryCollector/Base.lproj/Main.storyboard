@@ -148,6 +148,17 @@
                                     <action selector="backHome:" destination="u6N-us-0tc" eventType="touchUpInside" id="fok-4w-0rQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6H-qk-YSz">
+                                <rect key="frame" x="41" y="29" width="187" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.94339675339999995" blue="0.73748511880000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBoldItalic" family="Avenir Next" pointSize="18"/>
+                                <state key="normal" title="Ver estadísticas">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendAction:" destination="u6N-us-0tc" eventType="touchUpInside" id="MKh-PO-tFz"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xC6-gg-YFT">
                                 <rect key="frame" x="41" y="684" width="87" height="43"/>
                                 <color key="backgroundColor" red="1" green="0.94872733499999995" blue="0.66850223259999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -177,6 +188,7 @@
                         <outlet property="bullets" destination="vGf-JO-zlQ" id="lUX-1v-h8C"/>
                         <outlet property="masterScroll" destination="d6B-a1-DFA" id="CLO-Bc-jNY"/>
                         <outlet property="sendAnswersBtn" destination="xC6-gg-YFT" id="nCN-FA-lWc"/>
+                        <outlet property="sendBtn" destination="i6H-qk-YSz" id="haH-G3-BdM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LzD-Uz-iUX" userLabel="First Responder" sceneMemberID="firstResponder"/>

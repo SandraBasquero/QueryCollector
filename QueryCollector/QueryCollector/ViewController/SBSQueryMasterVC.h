@@ -28,4 +28,8 @@
 - (IBAction)sendAnswersAction:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *sendAnswersBtn;
 
+- (IBAction)sendAction:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *sendBtn;
+
+
 @end
