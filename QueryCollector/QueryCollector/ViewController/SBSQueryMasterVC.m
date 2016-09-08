@@ -34,6 +34,7 @@
     
     //Styles
     [self setBorderToButton:self.backHomeBtn];
+    [self setBorderToButton: self.sendAnswersBtn];
     
     if (sessionActivity.currentQuery == 1) {
         self.query1SlidesArray = [[NSMutableArray alloc]init];
@@ -140,7 +141,13 @@
 #pragma mark - Data Management
 
 - (IBAction)sendAnswersAction:(id)sender {
-    [[SBSSyncroData new] sendAnswersPendingToServer];
+    if ([[SBSSyncroData new] sendAnswersPendingToServer]) {
+        self.sendAnswersBtn.enabled = false;
+        self.sendAnswersBtn.alpha = 0.5;
+    } else {
+        self.sendAnswersBtn.enabled = true;
+        self.sendAnswersBtn.alpha = 1;
+    }
 }
 
 @end

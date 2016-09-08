@@ -30,8 +30,8 @@
 -(NSString*)getApiUrl: (NSString*)route {
     
     //Sandra
-    NSString * theRoute = [NSString stringWithFormat:@"127.0.0.1:3000/%@",route];
-    //NSString * theRoute = [NSString stringWithFormat:@"192.168.100.70:3000/%@",route];
+    //NSString * theRoute = [NSString stringWithFormat:@"127.0.0.1:3000/%@",route];
+    NSString * theRoute = [NSString stringWithFormat:@"192.168.100.70:3000/%@",route];
     return theRoute;
 }
 

@@ -46,6 +46,9 @@
 
 //Select only one button from a collection -> Choose one
 -(void)selectOne:(UIButton*)sender inCollection:(NSArray*)collection {
+    self.masterVC.sendAnswersBtn.enabled = true;
+    self.masterVC.sendAnswersBtn.alpha = 1;
+    
     for (UIButton *btn in collection) {
         btn.selected = false;
         [self buttonUnselectedStyle:btn];
@@ -56,6 +59,9 @@
 
 //Acts in buttons individually -> Multichoice
 -(void)selectOne:(UIButton*)sender {
+    self.masterVC.sendAnswersBtn.enabled = true;
+    self.masterVC.sendAnswersBtn.alpha = 1;
+    
     if (!sender.selected) {
         sender.selected = true;
         [self buttonSelectedStyle:sender];
@@ -65,7 +71,7 @@
     }
 }
 
-//Select the answer button already answered
+//Auto select the answer button already answered
 -(void) autoSelectAnsweredBtn:(SBSAnswerModel*)answerModel inColection:(NSArray*)answerBtnArray {
     if (answerModel.answer.length != 0) {
         for (UIButton *btn in answerBtnArray) {
@@ -83,7 +89,7 @@
     }
 }
 
-//Select the answer button already answered
+//Auto select the answer button already answered
 -(void) autoSelectAnsweredBtnsMulti:(SBSAnswerModel*)answerModel inColection:(NSArray*)answerBtnArray {
     
     NSArray *answersArray = [NSArray new];
