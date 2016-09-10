@@ -103,7 +103,7 @@
         NSLog(@"Las respuestas NO se han guardado!");
         success = false;
     }
-    return true; //success;
+    return success;
 }
 
 #pragma mark - Cities

@@ -8,6 +8,12 @@
 
 #import "SBSStaticsScrollVC.h"
 
+#import "SBSStats2AnswVC.h"
+#import "SBSStats3AnswVC.h"
+#import "SBSStats4AnswVC.h"
+#import "SBSStats6AnswVC.h"
+#import "SBSStatsBaseVC.h"
+
 @interface SBSStaticsScrollVC ()
 
 @property NSString *city;
@@ -30,10 +36,40 @@
     [self setBorderToButton:self.closeStatsBtn];
     self.closeStatsBtn.titleLabel.font = [UIFont fontWithName:@"AvenirNext-DemiBold" size:15];
     
+    
+    self.statSlideArray = [NSMutableArray new];
+    [self loadStatsForCity:self.city andQuery:self.currentQuery];
+    
+    //Set scrollViewParent size to content the views
+    [self.statsContentScroll setContentSize:CGSizeMake(1024 * self.statSlideArray.count, 768)];
+    self.statsContentScroll.delegate = self;
+    
+    //Cities filter menu
     self.syncrData = [[SBSSyncroData alloc]init];
     [self startCityTableSettings];
 }
 
+#pragma mark - Answers
+
+
+-(void)loadStatsForCity:(NSString*)city andQuery:(int)queryNum {
+    if (queryNum == 1) {
+        [self loadQuery1StatsForCity:city];
+    }
+    
+    CGFloat xPos = 0;
+    for (SBSStatsBaseVC *slide in self.statSlideArray) {
+        [self builderViews:slide inXPosition:xPos];
+        xPos += 1024;
+    }
+}
+
+-(void)loadQuery1StatsForCity:(NSString*)city {
+    SBSStats2AnswVC *statSlide1 = [[SBSStats2AnswVC alloc] initWithAnswers:nil forQuestion:1 andTexts:nil];
+    
+    
+    [self.statSlideArray addObject:statSlide1];
+}
 
 //Update views and data according with the new city selected
 -(void)cityChanged:(NSString*)city {
@@ -125,6 +161,16 @@
 }
 
 #pragma mark - Utils
+
+-(void)builderViews:(SBSStatsBaseVC*)slide
+        inXPosition:(CGFloat)xPos {
+    
+    [self addChildViewController:slide];
+    slide.staticsScrollVC = self;
+    [self.statsContentScroll addSubview:slide.view];
+    [slide.view setFrame:CGRectMake(xPos, 0, 1024, 768)];
+}
+
 
 -(void)setBorderToButton:(UIButton*)btn {
     btn.layer.borderWidth = 2.0f;

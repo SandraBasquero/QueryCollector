@@ -10,14 +10,16 @@
 #import "SBSSyncroData.h"
 #import "SBSSessionActivityModel.h"
 
+
 @interface SBSStaticsScrollVC : UIViewController<UITableViewDataSource, UITableViewDelegate,UIScrollViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UIScrollView *statsContentScroll;
 
 //Singleton
 @property SBSSessionActivityModel *sessionHandler;
 
 @property SBSSyncroData* syncrData;
-
+@property NSMutableArray *statSlideArray;
 
 - (IBAction)closeStats:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *closeStatsBtn;
