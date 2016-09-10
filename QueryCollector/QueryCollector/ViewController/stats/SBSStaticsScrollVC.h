@@ -7,10 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SBSSyncroData.h"
+#import "SBSSessionActivityModel.h"
 
-@interface SBSStaticsScrollVC : UIViewController
+@interface SBSStaticsScrollVC : UIViewController<UITableViewDataSource, UITableViewDelegate,UIScrollViewDelegate>
+
+
+//Singleton
+@property SBSSessionActivityModel *sessionHandler;
+
+@property SBSSyncroData* syncrData;
 
 
 - (IBAction)closeStats:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *closeStatsBtn;
+
+//Cities menu filter
+- (IBAction)cityFilterAction:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *cityFilterBtn;
+@property (weak, nonatomic) IBOutlet UITableView *citiesFilterList;
+
+@property (strong, nonatomic) NSMutableArray *citiesArray;
 
 @end
