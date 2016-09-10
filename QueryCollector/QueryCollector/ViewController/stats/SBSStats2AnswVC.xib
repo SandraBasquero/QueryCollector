@@ -7,9 +7,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SBSStats2AnswVC">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-                <outletCollection property="answerLabels" destination="Rsc-W5-JT6" id="nnQ-R0-Buy"/>
-                <outletCollection property="answerLabels" destination="zsA-fM-HIS" id="3E2-DC-deA"/>
-                <outletCollection property="answerLabels" destination="aSm-ef-RL0" id="oIf-Tn-v3h"/>
+                <outletCollection property="answerLabels" destination="aSm-ef-RL0" id="2Yw-3v-tk8"/>
+                <outletCollection property="answerLabels" destination="Rsc-W5-JT6" id="A8o-JF-4XL"/>
+                <outletCollection property="answerLabels" destination="zsA-fM-HIS" id="sFT-NB-c4q"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

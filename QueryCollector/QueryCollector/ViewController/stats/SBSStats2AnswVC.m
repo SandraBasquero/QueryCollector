@@ -16,7 +16,7 @@
 
 -(id)initWithAnswers:(NSDictionary*)json
          forQuestion:(int)number
-            andTexts:(NSMutableArray*) texts {
+            andTexts:(NSArray*) texts {
     
     if (self = [super initWithNibName:@"SBSStats2AnswVC" bundle:nil]) {
         self.answerJson = json;
@@ -28,7 +28,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    //Fill labels with query texts
+    for (int i = 0; i < self.answerLabels.count; i++) {
+        UILabel *label = [self.answerLabels objectAtIndex:i];
+        label.text = [self.questionTexts objectAtIndex:i];
+    }
 }
 
 

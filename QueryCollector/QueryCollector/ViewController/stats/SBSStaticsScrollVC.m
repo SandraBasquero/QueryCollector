@@ -65,7 +65,7 @@
 }
 
 -(void)loadQuery1StatsForCity:(NSString*)city {
-    SBSStats2AnswVC *statSlide1 = [[SBSStats2AnswVC alloc] initWithAnswers:nil forQuestion:1 andTexts:nil];
+    SBSStats2AnswVC *statSlide1 = [[SBSStats2AnswVC alloc] initWithAnswers:@{@"1":@"20",@"2":@"80"} forQuestion:1 andTexts:@[@"¿Este es el primer título?",@"Pues si",@"Pues no"]];
     
     
     [self.statSlideArray addObject:statSlide1];

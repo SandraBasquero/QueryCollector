@@ -16,10 +16,10 @@
 
 @property NSDictionary *answerJson;
 @property int number;
-@property NSMutableArray *questionTexts;
+@property NSArray *questionTexts;
 
 
 -(id)initWithAnswers:(NSDictionary*)json
          forQuestion:(int)number
-            andTexts:(NSMutableArray*)texts;
+            andTexts:(NSArray*)texts;
 @end
