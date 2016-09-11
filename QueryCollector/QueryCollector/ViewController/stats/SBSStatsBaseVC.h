@@ -12,4 +12,16 @@
 @interface SBSStatsBaseVC : UIViewController
 
 @property (nonatomic)SBSStaticsScrollVC *staticsScrollVC;
+
+//Properties
+@property NSDictionary *answerJson;
+@property int number;
+@property NSArray *questionTexts;
+
+//Fill/Render with data and text
+-(void)renderElements:(NSArray*)answerLabels
+              andBars:(NSArray*) percentBar
+           andNumbers:(NSArray*)percentNumLabel
+             withText:(NSArray*)questionTexts
+              andData:(NSDictionary*)answerJson;
 @end

@@ -11,15 +11,12 @@
 
 @interface SBSStats2AnswVC : SBSStatsBaseVC
 
-
+//View elements arrays
 @property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *answerLabels;
-
-@property NSDictionary *answerJson;
-@property int number;
-@property NSArray *questionTexts;
-
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *percentNumLabel;
+@property (strong, nonatomic) IBOutletCollection(UIProgressView) NSArray *percentBar;
 
 -(id)initWithAnswers:(NSDictionary*)json
          forQuestion:(int)number
-            andTexts:(NSArray*)texts;
+            andTexts:(NSArray*) texts;
 @end

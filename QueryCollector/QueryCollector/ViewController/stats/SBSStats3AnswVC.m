@@ -14,24 +14,24 @@
 
 @implementation SBSStats3AnswVC
 
+-(id)initWithAnswers:(NSDictionary*)json
+         forQuestion:(int)number
+            andTexts:(NSArray*) texts {
+    
+    if (self = [super initWithNibName:@"SBSStats3AnswVC" bundle:nil]) {
+        self.answerJson = json;
+        self.number = number;
+        self.questionTexts = texts;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    //Fill/Render with data and text
+    [self renderElements:self.answerLabels andBars:self.percentBar andNumbers:self.percentNumLabel withText:self.questionTexts andData:self.answerJson];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

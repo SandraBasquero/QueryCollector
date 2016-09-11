@@ -10,6 +10,10 @@
                 <outletCollection property="answerLabels" destination="aSm-ef-RL0" id="2Yw-3v-tk8"/>
                 <outletCollection property="answerLabels" destination="Rsc-W5-JT6" id="A8o-JF-4XL"/>
                 <outletCollection property="answerLabels" destination="zsA-fM-HIS" id="sFT-NB-c4q"/>
+                <outletCollection property="percentNumLabel" destination="DDI-ty-8Cr" id="uWG-2w-x7o"/>
+                <outletCollection property="percentNumLabel" destination="pbS-jz-y4g" id="T5o-Pc-K54"/>
+                <outletCollection property="percentBar" destination="lK3-tx-jR1" id="jYP-k6-YVw"/>
+                <outletCollection property="percentBar" destination="uec-d4-EYQ" id="yF7-Qf-ctU"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -31,11 +35,17 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lK3-tx-jR1">
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lK3-tx-jR1">
                     <rect key="frame" x="361" y="378" width="414" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="NLJ-X3-6hZ"/>
+                    </constraints>
                 </progressView>
-                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uec-d4-EYQ">
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uec-d4-EYQ">
                     <rect key="frame" x="361" y="501" width="414" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="GUU-UB-EQs"/>
+                    </constraints>
                 </progressView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDI-ty-8Cr">
                     <rect key="frame" x="821" y="352" width="126" height="53"/>

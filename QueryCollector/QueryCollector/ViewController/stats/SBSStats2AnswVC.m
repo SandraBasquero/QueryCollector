@@ -29,12 +29,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //Fill labels with query texts
-    for (int i = 0; i < self.answerLabels.count; i++) {
-        UILabel *label = [self.answerLabels objectAtIndex:i];
-        label.text = [self.questionTexts objectAtIndex:i];
-    }
+    //Fill/Render with data and text
+    [self renderElements:self.answerLabels andBars:self.percentBar andNumbers:self.percentNumLabel withText:self.questionTexts andData:self.answerJson];
 }
-
 
 @end

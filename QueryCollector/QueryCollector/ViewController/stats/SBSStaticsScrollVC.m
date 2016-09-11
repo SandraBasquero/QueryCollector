@@ -65,10 +65,13 @@
 }
 
 -(void)loadQuery1StatsForCity:(NSString*)city {
-    SBSStats2AnswVC *statSlide1 = [[SBSStats2AnswVC alloc] initWithAnswers:@{@"1":@"20",@"2":@"80"} forQuestion:1 andTexts:@[@"¿Este es el primer título?",@"Pues si",@"Pues no"]];
+    SBSStats2AnswVC *statSlide1 = [[SBSStats2AnswVC alloc] initWithAnswers:@{@"1":@"20",@"2":@"80"} forQuestion:1 andTexts:@[@"¿Eres fumador/a?",@"Sí",@"No"]];
+    
+    SBSStats3AnswVC *statSlide2 = [[SBSStats3AnswVC alloc] initWithAnswers:@{@"1":@"20",@"2":@"20", @"3":@"60"} forQuestion:2 andTexts:@[@"¿Cuantos días a la semana haces ejercicio?",@"Ningún día",@"De 1 a 3 días",@"4 días o más"]];
     
     
     [self.statSlideArray addObject:statSlide1];
+    [self.statSlideArray addObject:statSlide2];
 }
 
 //Update views and data according with the new city selected
