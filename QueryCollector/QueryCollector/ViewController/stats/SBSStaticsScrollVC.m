@@ -55,6 +55,8 @@
 -(void)loadStatsForCity:(NSString*)city andQuery:(int)queryNum {
     if (queryNum == 1) {
         [self loadQuery1StatsForCity:city];
+    } else if (queryNum == 2) {
+        [self loadQuery2StatsForCity:city];
     }
     
     CGFloat xPos = 0;
@@ -69,9 +71,30 @@
     
     SBSStats3AnswVC *statSlide2 = [[SBSStats3AnswVC alloc] initWithAnswers:@{@"1":@"20",@"2":@"20", @"3":@"60"} forQuestion:2 andTexts:@[@"¿Cuantos días a la semana haces ejercicio?",@"Ningún día",@"De 1 a 3 días",@"4 días o más"]];
     
+    SBSStats3AnswVC *statSlide3 = [[SBSStats3AnswVC alloc] initWithAnswers:@{@"1":@"20",@"2":@"20", @"3":@"60"} forQuestion:3 andTexts:@[@"¿Cuantas horas duermes normalmente por las noches?",@"5 horas o menos",@"De 6 a 8 horas",@"Más de 8 horas"]];
+    
+    SBSStats4AnswVC *statSlide4 = [[SBSStats4AnswVC alloc] initWithAnswers:@{@"1":@"20",@"2":@"20", @"3":@"30",  @"4":@"30"} forQuestion:4 andTexts:@[@"¿Con qué frecuencia sufres situaciones de mucho estrés?",@"A diario",@"Cada 1 o 2 semanas",@"Cada 1 o 2 meses",@"De 1 a 3 veces al año"]];
+    
     
     [self.statSlideArray addObject:statSlide1];
     [self.statSlideArray addObject:statSlide2];
+    [self.statSlideArray addObject:statSlide3];
+    [self.statSlideArray addObject:statSlide4];
+}
+
+-(void)loadQuery2StatsForCity:(NSString*)city {
+    SBSStats4AnswVC *statSlide1 = [[SBSStats4AnswVC alloc] initWithAnswers:@{@"1":@"20",@"2":@"20", @"3":@"30", @"4":@"30"} forQuestion:1 andTexts:@[@"¿Qué destino prefieres para tus vacaciones de verano?",@"Costa",@"Montaña",@"Ciudad",@"El extranjero"]];
+    
+    SBSStats6AnswVC *statSlide2 = [[SBSStats6AnswVC alloc] initWithAnswers:@{@"1":@"20",@"2":@"20", @"3":@"10", @"4":@"10", @"5":@"40", @"6":@"0"} forQuestion:2 andTexts:@[@"Idiomas en los que puedes comunicarte:",@"Castellano",@"Inglés",@"Francés",@"Alemán",@"Italiano",@"Otros"]];
+    
+    SBSStats4AnswVC *statSlide3 = [[SBSStats4AnswVC alloc] initWithAnswers:@{@"1":@"20",@"2":@"20", @"3":@"30", @"4":@"30"} forQuestion:3 andTexts:@[@"¿Con quien sueles irte de vacaciones?",@"Familia",@"Amigos/as",@"Pareja",@"Solo/a"]];
+    
+    
+    
+    
+    [self.statSlideArray addObject:statSlide1];
+    [self.statSlideArray addObject:statSlide2];
+    [self.statSlideArray addObject:statSlide3];
 }
 
 //Update views and data according with the new city selected
