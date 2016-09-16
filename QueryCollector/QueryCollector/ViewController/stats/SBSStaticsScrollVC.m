@@ -64,6 +64,7 @@
         [self builderViews:slide inXPosition:xPos];
         xPos += 1024;
     }
+    self.bulletsMarkStatics.numberOfPages = [self.statSlideArray count];
 }
 
 -(void)loadQuery1StatsForCity:(NSString*)city {
@@ -178,12 +179,16 @@
     }
 }
 
-
-
 #pragma mark - Navigation
 
 - (IBAction)closeStats:(id)sender {
     [self.navigationController popViewControllerAnimated:false];
+}
+
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    CGFloat pageWidth = self.statsContentScroll.frame.size.width;
+    int page = floor((self.statsContentScroll.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+    self.bulletsMarkStatics.currentPage = page;
 }
 
 #pragma mark - Utils
@@ -202,5 +207,6 @@
     btn.layer.borderWidth = 2.0f;
     [[btn layer] setBorderColor: [UIColor blackColor].CGColor];
 }
+
 
 @end

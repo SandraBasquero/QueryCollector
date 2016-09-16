@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SBSStaticsScrollVC">
             <connections>
+                <outlet property="bulletsMarkStatics" destination="7Fy-dG-28Z" id="Uyx-mU-By2"/>
                 <outlet property="citiesFilterList" destination="k1W-bp-yki" id="1QW-77-qMZ"/>
                 <outlet property="cityFilterBtn" destination="aBE-Zc-f45" id="Zab-Ag-Pez"/>
                 <outlet property="closeStatsBtn" destination="Rhp-KH-efo" id="Ocs-BW-WmS"/>
@@ -39,6 +40,9 @@
                         <action selector="cityFilterAction:" destination="-1" eventType="touchUpInside" id="Iq8-Mq-Gex"/>
                     </connections>
                 </button>
+                <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="7Fy-dG-28Z">
+                    <rect key="frame" x="492" y="723" width="39" height="37"/>
+                </pageControl>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhp-KH-efo">
                     <rect key="frame" x="38" y="35" width="108" height="42"/>
                     <color key="backgroundColor" red="0.45244584030000001" green="0.79215686269999996" blue="0.55460427140000002" alpha="1" colorSpace="calibratedRGB"/>

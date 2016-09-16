@@ -31,4 +31,8 @@
 
 @property (strong, nonatomic) NSMutableArray *citiesArray;
 
+//Bullets
+@property (weak, nonatomic) IBOutlet UIPageControl *bulletsMarkStatics;
+
+
 @end
