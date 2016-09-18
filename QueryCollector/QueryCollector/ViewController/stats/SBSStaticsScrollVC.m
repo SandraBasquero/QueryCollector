@@ -47,6 +47,9 @@
     //Cities filter menu
     self.syncrData = [[SBSSyncroData alloc]init];
     [self startCityTableSettings];
+    
+    //Go to current static question slide
+    [self goToCurrentQuestion];
 }
 
 #pragma mark - Answers
@@ -183,6 +186,17 @@
 
 - (IBAction)closeStats:(id)sender {
     [self.navigationController popViewControllerAnimated:false];
+}
+
+-(void) goToCurrentQuestion {
+    SBSSessionActivityModel *sessionHandler = [SBSSessionActivityModel sessionHandler];
+    if (sessionHandler.currentQuery == 1) {
+        [self.statsContentScroll setContentOffset:CGPointMake(1024*(self.sessionHandler.currentSlide), 0)];
+        self.bulletsMarkStatics.currentPage = self.sessionHandler.currentSlide;
+    } else if (sessionHandler.currentQuery == 2) {
+        [self.statsContentScroll setContentOffset:CGPointMake(1024*(self.sessionHandler.currentSlide2), 0)];
+        self.bulletsMarkStatics.currentPage = self.sessionHandler.currentSlide2;
+    }
 }
 
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {

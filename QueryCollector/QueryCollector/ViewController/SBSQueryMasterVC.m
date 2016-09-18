@@ -81,6 +81,15 @@
     [[btn layer] setBorderColor: [UIColor blackColor].CGColor];
 }
 
+-(void) setCurrentSlide {
+    SBSSessionActivityModel *sessionHandler = [SBSSessionActivityModel sessionHandler];
+    if (sessionHandler.currentQuery == 1) {
+        sessionHandler.currentSlide = self.currentSlide;
+    } else if (sessionHandler.currentQuery == 2) {
+        sessionHandler.currentSlide2 = self.currentSlide;
+    }
+}
+
 #pragma mark - Queries ViewController Selected
 
 -(void)query1Selected {
@@ -121,12 +130,7 @@
 
 - (IBAction)backHome:(id)sender {
     //Singleton
-    SBSSessionActivityModel *sessionHandler = [SBSSessionActivityModel sessionHandler];
-    if (sessionHandler.currentQuery == 1) {
-        sessionHandler.currentSlide = self.currentSlide;
-    } else if (sessionHandler.currentQuery == 2) {
-        sessionHandler.currentSlide2 = self.currentSlide;
-    }
+    [self setCurrentSlide];
     
     [self.navigationController popToViewController:[self.navigationController.viewControllers objectAtIndex:0] animated:true];
 }
@@ -142,8 +146,7 @@
 
 - (IBAction)sendAction:(id)sender {
     //Singleton
-    SBSSessionActivityModel *sessionHandler = [SBSSessionActivityModel sessionHandler];
-    sessionHandler.currentSlide = self.currentSlide;
+    [self setCurrentSlide];
     //....................................
     //Syncronization
     //[[CCCSyncroData new] getStats];
