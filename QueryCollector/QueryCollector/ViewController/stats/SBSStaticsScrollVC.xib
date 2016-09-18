@@ -19,6 +19,9 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="15360-illustration-of-city-buildings-in-melbourne-australia-or-resize.png" translatesAutoresizingMaskIntoConstraints="NO" id="N53-9C-avh">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                </imageView>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f3j-8x-Eqx">
                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                     <connections>
@@ -61,4 +64,7 @@
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
         </view>
     </objects>
+    <resources>
+        <image name="15360-illustration-of-city-buildings-in-melbourne-australia-or-resize.png" width="1024" height="768"/>
+    </resources>
 </document>

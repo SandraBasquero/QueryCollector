@@ -66,6 +66,8 @@
 		B68053EF1D47DE670023DBFC /* SBSSlide1Query1VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B68053ED1D47DE670023DBFC /* SBSSlide1Query1VC.xib */; };
 		B68053F31D47DEF40023DBFC /* SBSSlide2Query1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = B68053F11D47DEF40023DBFC /* SBSSlide2Query1VC.m */; };
 		B68053F41D47DEF40023DBFC /* SBSSlide2Query1VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B68053F21D47DEF40023DBFC /* SBSSlide2Query1VC.xib */; };
+		B694A6AD1D8E917600801B21 /* graphic.png in Resources */ = {isa = PBXBuildFile; fileRef = B694A6AB1D8E917600801B21 /* graphic.png */; };
+		B694A6AE1D8E917600801B21 /* graphic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B694A6AC1D8E917600801B21 /* graphic@2x.png */; };
 		B6AD9B721D841C01008C8CA5 /* SBSStats2AnswVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AD9B701D841C01008C8CA5 /* SBSStats2AnswVC.m */; };
 		B6AD9B731D841C01008C8CA5 /* SBSStats2AnswVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6AD9B711D841C01008C8CA5 /* SBSStats2AnswVC.xib */; };
 		B6AD9B771D841C65008C8CA5 /* SBSStats3AnswVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AD9B751D841C65008C8CA5 /* SBSStats3AnswVC.m */; };
@@ -208,6 +210,8 @@
 		B68053F01D47DEF40023DBFC /* SBSSlide2Query1VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSSlide2Query1VC.h; sourceTree = "<group>"; };
 		B68053F11D47DEF40023DBFC /* SBSSlide2Query1VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSSlide2Query1VC.m; sourceTree = "<group>"; };
 		B68053F21D47DEF40023DBFC /* SBSSlide2Query1VC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBSSlide2Query1VC.xib; sourceTree = "<group>"; };
+		B694A6AB1D8E917600801B21 /* graphic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = graphic.png; sourceTree = "<group>"; };
+		B694A6AC1D8E917600801B21 /* graphic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "graphic@2x.png"; sourceTree = "<group>"; };
 		B6AD9B6F1D841C01008C8CA5 /* SBSStats2AnswVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSStats2AnswVC.h; path = QueryCollector/ViewController/stats/SBSStats2AnswVC.h; sourceTree = SOURCE_ROOT; };
 		B6AD9B701D841C01008C8CA5 /* SBSStats2AnswVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBSStats2AnswVC.m; path = QueryCollector/ViewController/stats/SBSStats2AnswVC.m; sourceTree = SOURCE_ROOT; };
 		B6AD9B711D841C01008C8CA5 /* SBSStats2AnswVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SBSStats2AnswVC.xib; path = QueryCollector/ViewController/stats/SBSStats2AnswVC.xib; sourceTree = SOURCE_ROOT; };
@@ -548,6 +552,8 @@
 		B66748ED1D5200C300BC5750 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B694A6AB1D8E917600801B21 /* graphic.png */,
+				B694A6AC1D8E917600801B21 /* graphic@2x.png */,
 				B6CC87911D588C190016EE34 /* back-home-btn.png */,
 				B6CC87921D588C190016EE34 /* back-home-btn@2x.png */,
 				B67028381D5262E600D911DA /* 15360-illustration-of-city-buildings-in-melbourne-australia-or-resize.png */,
@@ -659,8 +665,10 @@
 			files = (
 				B66748F21D5202B000BC5750 /* 5655-close-up-of-an-isolated-sunflower-pv.jpg in Resources */,
 				B6CC87941D588C190016EE34 /* back-home-btn@2x.png in Resources */,
+				B694A6AE1D8E917600801B21 /* graphic@2x.png in Resources */,
 				B68053F41D47DEF40023DBFC /* SBSSlide2Query1VC.xib in Resources */,
 				B66748F71D5203D500BC5750 /* 6957-illustration-of-a-city-skyline-or.png in Resources */,
+				B694A6AD1D8E917600801B21 /* graphic.png in Resources */,
 				B6D191821D50B5CD00A88162 /* SBSSlide3Query2VC.xib in Resources */,
 				B6D191781D50B3E700A88162 /* SBSSlide1Query2VC.xib in Resources */,
 				B6D1917D1D50B55000A88162 /* SBSSlide2Query2VC.xib in Resources */,
