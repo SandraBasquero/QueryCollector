@@ -52,10 +52,12 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="QTU-vJ-3dw"/>
                     </constraints>
+                    <color key="progressTintColor" red="1" green="0.94509803920000002" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="trackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </progressView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKx-7Z-Ugu">
                     <rect key="frame" x="374" y="318" width="91" height="53"/>
-                    <color key="backgroundColor" red="0.56700770639999998" green="1" blue="0.69493030730000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.85098039219999999" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -72,10 +74,12 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="ReC-ZK-bGB"/>
                     </constraints>
+                    <color key="progressTintColor" red="1" green="0.94509803920000002" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="trackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </progressView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZcM-oj-hLf">
                     <rect key="frame" x="374" y="433" width="91" height="53"/>
-                    <color key="backgroundColor" red="0.56700770639999998" green="1" blue="0.69493030730000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.85098039219999999" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -92,10 +96,12 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="g4I-jV-Kqv"/>
                     </constraints>
+                    <color key="progressTintColor" red="1" green="0.94509803920000002" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="trackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </progressView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzP-Fy-rb1">
                     <rect key="frame" x="374" y="543" width="91" height="53"/>
-                    <color key="backgroundColor" red="0.56700770639999998" green="1" blue="0.69493030730000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.85098039219999999" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -112,10 +118,12 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="AJh-KN-yzt"/>
                     </constraints>
+                    <color key="progressTintColor" red="1" green="0.94509803920000002" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="trackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </progressView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuw-aE-u5f">
                     <rect key="frame" x="903" y="433" width="91" height="53"/>
-                    <color key="backgroundColor" red="0.56700770639999998" green="1" blue="0.69493030730000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.85098039219999999" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -132,10 +140,12 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="Z2r-hK-g1m"/>
                     </constraints>
+                    <color key="progressTintColor" red="1" green="0.94509803920000002" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="trackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </progressView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehq-t1-b4t">
                     <rect key="frame" x="903" y="318" width="91" height="53"/>
-                    <color key="backgroundColor" red="0.56700770639999998" green="1" blue="0.69493030730000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.85098039219999999" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -152,16 +162,18 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="Xhc-s4-FV7"/>
                     </constraints>
+                    <color key="progressTintColor" red="1" green="0.94509803920000002" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="trackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </progressView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4U-VO-0hb">
                     <rect key="frame" x="903" y="543" width="91" height="53"/>
-                    <color key="backgroundColor" red="0.56700770639999998" green="1" blue="0.69493030730000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.85098039219999999" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="0.65491469560000004" green="0.88609287439999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>

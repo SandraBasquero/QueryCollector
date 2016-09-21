@@ -34,5 +34,4 @@
 //Bullets
 @property (weak, nonatomic) IBOutlet UIPageControl *bulletsMarkStatics;
 
-
 @end

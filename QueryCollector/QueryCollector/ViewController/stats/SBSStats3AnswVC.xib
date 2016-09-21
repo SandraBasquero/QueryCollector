@@ -57,36 +57,42 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="SL8-Gn-XQK"/>
                     </constraints>
+                    <color key="progressTintColor" red="1" green="0.94509803920000002" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="trackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </progressView>
                 <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pgB-nv-27Z">
                     <rect key="frame" x="338" y="487" width="414" height="2"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="C8I-op-v4f"/>
                     </constraints>
+                    <color key="progressTintColor" red="1" green="0.94509803920000002" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="trackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </progressView>
                 <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sls-Ct-qYP">
                     <rect key="frame" x="338" y="589" width="414" height="2"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="IhP-j1-yuF"/>
                     </constraints>
+                    <color key="progressTintColor" red="1" green="0.94509803920000002" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="trackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </progressView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dd9-wY-xCk">
                     <rect key="frame" x="790" y="357" width="126" height="53"/>
-                    <color key="backgroundColor" red="0.56700770639999998" green="1" blue="0.69493030730000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.97647058823529409" green="0.85098039215686272" blue="0.51372549019607838" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyA-f6-obw">
                     <rect key="frame" x="790" y="461" width="126" height="53"/>
-                    <color key="backgroundColor" red="0.56700770639999998" green="1" blue="0.69493030730000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.85098039219999999" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAT-ce-1HK">
                     <rect key="frame" x="790" y="563" width="126" height="53"/>
-                    <color key="backgroundColor" red="0.56700770639999998" green="1" blue="0.69493030730000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.85098039219999999" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
