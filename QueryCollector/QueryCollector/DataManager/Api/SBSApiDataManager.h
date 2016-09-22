@@ -13,4 +13,6 @@
 
 -(BOOL)sendAnwers:(NSMutableArray*)answerArray;
 -(NSArray*) getCitiesFromServer;
+-(NSDictionary*) getStatsFromServer;
+
 @end

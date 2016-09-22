@@ -130,7 +130,22 @@
         NSLog(@"Oh noooo, algo ha fallado con las cities");
     }
     
-    return [citiesList copy];;
+    return [citiesList copy];
+}
+
+
+#pragma mark - Stats
+
+-(NSDictionary*) getStatsFromServer {
+    NSDictionary* jsonResponse = [self callRequest:@"getStats" andContentArray:nil];
+    if(jsonResponse != nil) {
+        NSLog(@"Sí ha habido conexión de datos");
+        NSDictionary *pasedData = jsonResponse;
+        return pasedData;
+    } else {
+        NSLog(@"Oh oh, algo ha fallado o NO hay respuestas");
+        return nil;
+    }
 }
 
 
