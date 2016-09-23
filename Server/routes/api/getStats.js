@@ -31,7 +31,7 @@ exports = module.exports = function(req, res) {
   			_.each(theQuery.questions, function(question, questionKey) {
   				_.each(question, function(value, key) {
 
-  					console.log(json[cityKey].query[queryKey].questions[questionKey]);
+  					//console.log(json[cityKey].query[queryKey].questions[questionKey]);
 
   				});
   			});
@@ -40,36 +40,52 @@ exports = module.exports = function(req, res) {
     res.json(json);
   }
 
-var statsQuery1 = function(city, nextCity) {
-  var question = json[city.city].cases[city.queryNumber].questions[city.questionNumber];
 
-  nextCity();
+var statsQuery1 = function(anAnswer, callback) {
+
+	console.log("*****************************");
+	console.log(anAnswer.city);
+	console.log("-------------------------------");
+
+  var question = json[anAnswer.city].query[anAnswer.queryNumber].questions[anAnswer.questionNumber];
+	question[anAnswer.answer] = question[anAnswer.answer] + 1;
+	question['total'] = question['total'] + 1;
+
+	console.log(question[anAnswer.answer]);
+	console.log(anAnswer.answer);
+
+  callback();
 };
 
 
+//Get all the answers from db
 keystone.list('Answer').model.find().exec(function(err, answers) {
-  var groupedAnswers = _.groupBy(answers, function(answer) {
-			return answer.city;
-		});
+	//Group the answers by city
+	var groupedAnswers = _.groupBy(answers, function(answer) {
+		return answer.city;
+	});
 
-    async.eachLimit(_.keys(groupedAnswers), 5, function(key, done) {
-    var cities = groupedAnswers[key];
-    json[key] = JSON.parse(JSON.stringify(skel));
+	async.eachLimit(_.keys(groupedAnswers), 6, function(key, done) {
+	var cities = groupedAnswers[key];
+	json[key] = JSON.parse(JSON.stringify(skel));
 
-    async.eachLimit(cities, 5, function(city, nextCity) {
-      if(city.caseNumber == 1) {
-        statsCase1(city, nextCity);
-      } else {
-        console.log('case number unsuported');
-        nextCity();
-      }
-    }, function() {
-      done();
-    });
-  }, function() {
-    normalize();
-  });
+	async.eachLimit(cities, 6, function(anAnswer, callback) {
+		if (anAnswer.queryNumber == 1) {
+			statsQuery1(anAnswer, callback);
+		} else if (anAnswer.queryNumber == 2) {
+			console.log("query 2");
+			callback();
+		} else {
+			console.log('query number unsuported');
+			callback();
+		}
+	}, function() {
+		done();
+	});
+	}, function() {
+	normalize();
+	});
 
-});
+	});
 
 };
