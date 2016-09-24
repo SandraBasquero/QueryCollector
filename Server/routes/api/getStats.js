@@ -41,18 +41,31 @@ exports = module.exports = function(req, res) {
   }
 
 
-var statsQuery1 = function(anAnswer, callback) {
+//Fill json skeleton with datas answer
+var statsQuery = function(anAnswer, callback) {
 
-	console.log("*****************************");
-	console.log(anAnswer.city);
-	console.log("-------------------------------");
+	var answerArray = anAnswer.answer.split("-"); //save the answer/s of this question in an array
+	var question = json[anAnswer.city].query[anAnswer.queryNumber].questions[anAnswer.questionNumber]; //go to the exact query question
 
-  var question = json[anAnswer.city].query[anAnswer.queryNumber].questions[anAnswer.questionNumber];
-	question[anAnswer.answer] = question[anAnswer.answer] + 1;
-	question['total'] = question['total'] + 1;
+	for (var i = 0; i < answerArray.length; i++) {
+		question[answerArray[i]] = question[answerArray[i]] + 1;  //Rise the counter of this answer in skel
+		question['total'] = question['total'] + 1; //Also rise the total in skel
+	}
 
-	console.log(question[anAnswer.answer]);
-	console.log(anAnswer.answer);
+	/* Plan B : dividir las respuestas en array solo en la pregunta mutlichoise -funciona igual que lo de arriba-
+	var question = json[anAnswer.city].query[anAnswer.queryNumber].questions[anAnswer.questionNumber];
+	 if (anAnswer.queryNumber == 2 && anAnswer.questionNumber == 2) {
+	 	console.log("------------asfdasfdasdf--------------");
+		var answerArray = anAnswer.answer.split("-");
+		for (var i = 0; i < answerArray.length; i++) {
+			answerArray[i]
+			question[answerArray[i]] = question[answerArray[i]] + 1;
+			question['total'] = question['total'] + 1;
+		}
+	} else {
+		question[anAnswer.answer] = question[anAnswer.answer] + 1; //Rise the counter of this answer in skel
+		question['total'] = question['total'] + 1; //Also rise the total in skel
+	}*/
 
   callback();
 };
@@ -67,14 +80,11 @@ keystone.list('Answer').model.find().exec(function(err, answers) {
 
 	async.eachLimit(_.keys(groupedAnswers), 6, function(key, done) {
 	var cities = groupedAnswers[key];
-	json[key] = JSON.parse(JSON.stringify(skel));
+	json[key] = JSON.parse(JSON.stringify(skel)); //add the city name in skel json
 
 	async.eachLimit(cities, 6, function(anAnswer, callback) {
-		if (anAnswer.queryNumber == 1) {
-			statsQuery1(anAnswer, callback);
-		} else if (anAnswer.queryNumber == 2) {
-			console.log("query 2");
-			callback();
+		if (anAnswer.queryNumber == 1 || anAnswer.queryNumber == 2) {
+			statsQuery(anAnswer, callback);
 		} else {
 			console.log('query number unsuported');
 			callback();
