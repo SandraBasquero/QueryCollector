@@ -32,6 +32,9 @@
     //Sync data
     self.syncData = [SBSSyncroData new];
     [self startCityTableSettings];
+    
+    //NSDictionary *test = [[SBSApiDataManager new] getStatsFromServer];
+    //NSLog(@"%@",test);
 }
 
 

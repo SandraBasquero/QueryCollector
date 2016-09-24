@@ -14,6 +14,7 @@ exports = module.exports = function(req, res) {
 	var sendResults = function() {
 		//console.log(results);
 		var myJson = JSON.stringify(results);
+		console.log(myJson);
 		res.send({success: true, workshopList: myJson});
 	}
 
@@ -24,20 +25,22 @@ exports = module.exports = function(req, res) {
   var isInt = function(n) {
   	return Number(n) === n && n % 1 === 0;
   };
-
+	//Transform data numbers to percentajes in json skel
   var normalize = function() {
   	_.each(json, function(city, cityKey) {
   		_.each(city.query, function(theQuery, queryKey) {
   			_.each(theQuery.questions, function(question, questionKey) {
   				_.each(question, function(value, key) {
-
-  					//console.log(json[cityKey].query[queryKey].questions[questionKey]);
-
+  					if (!isNaN(parseInt(key)) && question.total > 0) {
+  						value = parseFloat(value) / parseFloat(question.total);
+  						value = (value * 100);
+  						json[cityKey].query[queryKey].questions[questionKey][key] = value;
+  					}
   				});
   			});
   		});
   	});
-    res.json(json);
+  	res.json(json);
   }
 
 
@@ -93,7 +96,7 @@ keystone.list('Answer').model.find().exec(function(err, answers) {
 		done();
 	});
 	}, function() {
-	normalize();
+	normalize(); //Transform data numbers to percentajes in json skel
 	});
 
 	});
