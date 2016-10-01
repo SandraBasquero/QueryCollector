@@ -13,6 +13,7 @@
 #import "SBSStats4AnswVC.h"
 #import "SBSStats6AnswVC.h"
 #import "SBSStatsBaseVC.h"
+#import "SBSStatsManager.h"
 
 @interface SBSStaticsScrollVC ()
 
@@ -71,14 +72,15 @@
 }
 
 -(void)loadQuery1StatsForCity:(NSString*)city {
-    SBSStats2AnswVC *statSlide1 = [[SBSStats2AnswVC alloc] initWithAnswers:@{@"1":@"20",@"2":@"80"} forQuestion:1 andTexts:@[@"¿Eres fumador/a?",@"Sí",@"No"]];
+    SBSStatsManager *statsManager = [SBSStatsManager new];
     
-    SBSStats3AnswVC *statSlide2 = [[SBSStats3AnswVC alloc] initWithAnswers:@{@"1":@"20",@"2":@"20", @"3":@"60"} forQuestion:2 andTexts:@[@"¿Cuantos días a la semana haces ejercicio?",@"Ningún día",@"De 1 a 3 días",@"4 días o más"]];
+    SBSStats2AnswVC *statSlide1 = [[SBSStats2AnswVC alloc] initWithAnswers:[statsManager getStats:city withQuery:1 withQuestion:1] andTexts:@[@"¿Eres fumador/a?",@"Sí",@"No"]];
     
-    SBSStats3AnswVC *statSlide3 = [[SBSStats3AnswVC alloc] initWithAnswers:@{@"1":@"20",@"2":@"20", @"3":@"60"} forQuestion:3 andTexts:@[@"¿Cuantas horas duermes normalmente por las noches?",@"5 horas o menos",@"De 6 a 8 horas",@"Más de 8 horas"]];
+    SBSStats3AnswVC *statSlide2 = [[SBSStats3AnswVC alloc] initWithAnswers:[statsManager getStats:city withQuery:1 withQuestion:2] andTexts:@[@"¿Cuantos días a la semana haces ejercicio?",@"Ningún día",@"De 1 a 3 días",@"4 días o más"]];
     
-    SBSStats4AnswVC *statSlide4 = [[SBSStats4AnswVC alloc] initWithAnswers:@{@"1":@"20",@"2":@"20", @"3":@"30",  @"4":@"30"} forQuestion:4 andTexts:@[@"¿Con qué frecuencia sufres situaciones de mucho estrés?",@"A diario",@"Cada 1 o 2 semanas",@"Cada 1 o 2 meses",@"De 1 a 3 veces al año"]];
+    SBSStats3AnswVC *statSlide3 = [[SBSStats3AnswVC alloc] initWithAnswers:[statsManager getStats:city withQuery:1 withQuestion:3] andTexts:@[@"¿Cuantas horas duermes normalmente por las noches?",@"5 horas o menos",@"De 6 a 8 horas",@"Más de 8 horas"]];
     
+    SBSStats4AnswVC *statSlide4 = [[SBSStats4AnswVC alloc] initWithAnswers:[statsManager getStats:city withQuery:1 withQuestion:4] andTexts:@[@"¿Con qué frecuencia sufres situaciones de mucho estrés?",@"A diario",@"Cada 1 o 2 semanas",@"Cada 1 o 2 meses",@"De 1 a 3 veces al año"]];
     
     [self.statSlideArray addObject:statSlide1];
     [self.statSlideArray addObject:statSlide2];
@@ -87,14 +89,13 @@
 }
 
 -(void)loadQuery2StatsForCity:(NSString*)city {
-    SBSStats4AnswVC *statSlide1 = [[SBSStats4AnswVC alloc] initWithAnswers:@{@"1":@"20",@"2":@"20", @"3":@"30", @"4":@"30"} forQuestion:1 andTexts:@[@"¿Qué destino prefieres para tus vacaciones de verano?",@"Costa",@"Montaña",@"Ciudad",@"El extranjero"]];
+    SBSStatsManager *statsManager = [SBSStatsManager new];
     
-    SBSStats6AnswVC *statSlide2 = [[SBSStats6AnswVC alloc] initWithAnswers:@{@"1":@"20",@"2":@"20", @"3":@"10", @"4":@"10", @"5":@"40", @"6":@"0"} forQuestion:2 andTexts:@[@"Idiomas en los que puedes comunicarte:",@"Castellano",@"Inglés",@"Francés",@"Alemán",@"Italiano",@"Otros"]];
+    SBSStats4AnswVC *statSlide1 = [[SBSStats4AnswVC alloc] initWithAnswers:[statsManager getStats:city withQuery:2 withQuestion:1] andTexts:@[@"¿Qué destino prefieres para tus vacaciones de verano?",@"Costa",@"Montaña",@"Ciudad",@"El extranjero"]];
     
-    SBSStats4AnswVC *statSlide3 = [[SBSStats4AnswVC alloc] initWithAnswers:@{@"1":@"20",@"2":@"20", @"3":@"30", @"4":@"30"} forQuestion:3 andTexts:@[@"¿Con quien sueles irte de vacaciones?",@"Familia",@"Amigos/as",@"Pareja",@"Solo/a"]];
+    SBSStats6AnswVC *statSlide2 = [[SBSStats6AnswVC alloc] initWithAnswers:[statsManager getStats:city withQuery:2 withQuestion:2] andTexts:@[@"Idiomas en los que puedes comunicarte:",@"Castellano",@"Inglés",@"Francés",@"Alemán",@"Italiano",@"Otros"]];
     
-    
-    
+    SBSStats4AnswVC *statSlide3 = [[SBSStats4AnswVC alloc] initWithAnswers:[statsManager getStats:city withQuery:2 withQuestion:3] andTexts:@[@"¿Con quien sueles irte de vacaciones?",@"Familia",@"Amigos/as",@"Pareja",@"Solo/a"]];
     
     [self.statSlideArray addObject:statSlide1];
     [self.statSlideArray addObject:statSlide2];

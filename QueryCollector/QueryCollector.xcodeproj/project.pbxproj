@@ -77,6 +77,7 @@
 		B6AD9B811D841CD1008C8CA5 /* SBSStats6AnswVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AD9B7F1D841CD1008C8CA5 /* SBSStats6AnswVC.m */; };
 		B6AD9B821D841CD1008C8CA5 /* SBSStats6AnswVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6AD9B801D841CD1008C8CA5 /* SBSStats6AnswVC.xib */; };
 		B6AD9B851D84289A008C8CA5 /* SBSStatsBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AD9B841D84289A008C8CA5 /* SBSStatsBaseVC.m */; };
+		B6BF78731D9FC442004914CF /* SBSStatsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BF78721D9FC442004914CF /* SBSStatsManager.m */; };
 		B6CC87931D588C190016EE34 /* back-home-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CC87911D588C190016EE34 /* back-home-btn.png */; };
 		B6CC87941D588C190016EE34 /* back-home-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CC87921D588C190016EE34 /* back-home-btn@2x.png */; };
 		B6D1916C1D50AE9500A88162 /* SBSSlide3Query1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D1916A1D50AE9500A88162 /* SBSSlide3Query1VC.m */; };
@@ -226,6 +227,8 @@
 		B6AD9B801D841CD1008C8CA5 /* SBSStats6AnswVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SBSStats6AnswVC.xib; path = QueryCollector/ViewController/stats/SBSStats6AnswVC.xib; sourceTree = SOURCE_ROOT; };
 		B6AD9B831D84289A008C8CA5 /* SBSStatsBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBSStatsBaseVC.h; path = QueryCollector/ViewController/stats/SBSStatsBaseVC.h; sourceTree = SOURCE_ROOT; };
 		B6AD9B841D84289A008C8CA5 /* SBSStatsBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBSStatsBaseVC.m; path = QueryCollector/ViewController/stats/SBSStatsBaseVC.m; sourceTree = SOURCE_ROOT; };
+		B6BF78711D9FC442004914CF /* SBSStatsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSStatsManager.h; sourceTree = "<group>"; };
+		B6BF78721D9FC442004914CF /* SBSStatsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSStatsManager.m; sourceTree = "<group>"; };
 		B6CC87911D588C190016EE34 /* back-home-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-home-btn.png"; sourceTree = "<group>"; };
 		B6CC87921D588C190016EE34 /* back-home-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-home-btn@2x.png"; sourceTree = "<group>"; };
 		B6D191691D50AE9500A88162 /* SBSSlide3Query1VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSSlide3Query1VC.h; sourceTree = "<group>"; };
@@ -504,6 +507,8 @@
 			children = (
 				B616041A1D3EA5C30061C382 /* SBSApiDataManager.h */,
 				B616041B1D3EA5C30061C382 /* SBSApiDataManager.m */,
+				B6BF78711D9FC442004914CF /* SBSStatsManager.h */,
+				B6BF78721D9FC442004914CF /* SBSStatsManager.m */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -736,6 +741,7 @@
 				957768361D2CF524006FE5A0 /* ReaderMainPagebar.m in Sources */,
 				955BFF2A1D81BCE20082999B /* SBSStaticsScrollVC.m in Sources */,
 				9577682D1D2CF524006FE5A0 /* FMResultSet.m in Sources */,
+				B6BF78731D9FC442004914CF /* SBSStatsManager.m in Sources */,
 				957768311D2CF524006FE5A0 /* ReaderContentPage.m in Sources */,
 				957768381D2CF524006FE5A0 /* ReaderThumbCache.m in Sources */,
 				B61604221D3EA6F50061C382 /* SBSCityModel.m in Sources */,

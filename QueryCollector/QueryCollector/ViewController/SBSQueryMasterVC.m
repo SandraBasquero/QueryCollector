@@ -149,7 +149,7 @@
     [self setCurrentSlide];
     //....................................
     //Syncronization
-    //[[CCCSyncroData new] getStats];
+    [[SBSSyncroData new] getStats];
     
     SBSStaticsScrollVC *statsVC = [SBSStaticsScrollVC new];
     [self.navigationController pushViewController:statsVC animated:false];

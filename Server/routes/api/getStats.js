@@ -10,13 +10,13 @@ exports = module.exports = function(req, res) {
 
 	console.log("Acces to route: /getStats");
 
-	var results = {};
+	/*var results = {};
 	var sendResults = function() {
 		//console.log(results);
 		var myJson = JSON.stringify(results);
 		console.log(myJson);
 		res.send({success: true, workshopList: myJson});
-	}
+	}*/
 
 
   var skel = require('../../public/resources/statsSkel.json');

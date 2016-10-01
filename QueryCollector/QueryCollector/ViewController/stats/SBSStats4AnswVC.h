@@ -17,7 +17,6 @@
 @property (strong, nonatomic) IBOutletCollection(UIProgressView) NSArray *percentBar;
 
 -(id)initWithAnswers:(NSDictionary*)json
-         forQuestion:(int)number
             andTexts:(NSArray*) texts;
 
 @end

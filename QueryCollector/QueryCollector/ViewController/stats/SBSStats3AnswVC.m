@@ -15,12 +15,10 @@
 @implementation SBSStats3AnswVC
 
 -(id)initWithAnswers:(NSDictionary*)json
-         forQuestion:(int)number
             andTexts:(NSArray*) texts {
     
     if (self = [super initWithNibName:@"SBSStats3AnswVC" bundle:nil]) {
         self.answerJson = json;
-        self.number = number;
         self.questionTexts = texts;
     }
     return self;

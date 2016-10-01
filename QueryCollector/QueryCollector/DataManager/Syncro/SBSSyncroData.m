@@ -10,6 +10,7 @@
 #import "SBSApiDataManager.h"
 #import "SBSCityData.h"
 #import "SBSAnswerData.h"
+#import "SBSStatsManager.h"
 
 #import "Reachability.h"
 
@@ -79,6 +80,15 @@
     } else {
         return  false;
     }
+}
+
+#pragma mark - Stats
+-(void) getStats {
+    SBSApiDataManager *apiData = [[SBSApiDataManager alloc]init];
+    NSDictionary* allStats = [apiData getStatsFromServer];
+    
+    SBSStatsManager *manager = [SBSStatsManager new];
+    [manager saveJSON:allStats];
 }
 
 #pragma mark - Internet
