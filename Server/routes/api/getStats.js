@@ -49,11 +49,27 @@ var statsQuery = function(anAnswer, callback) {
 
 	var answerArray = anAnswer.answer.split("-"); //save the answer/s of this question in an array
 	var question = json[anAnswer.city].query[anAnswer.queryNumber].questions[anAnswer.questionNumber]; //go to the exact query question
+	var currentUser = "";
+
+	//console.log("buscando query "+anAnswer.queryNumber);
+	//console.log("buscando question "+anAnswer.questionNumber);
 
 	for (var i = 0; i < answerArray.length; i++) {
 		question[answerArray[i]] = question[answerArray[i]] + 1;  //Rise the counter of this answer in skel
-		question['total'] = question['total'] + 1; //Also rise the total in skel
+		//question['total'] = question['total'] + 1; //Also rise the total in skel
+		if (anAnswer.queryNumber == 2 && anAnswer.questionNumber == 2) {
+			if (currentUser != anAnswer.userID) {
+				console.log("Multi idiomas de "+ anAnswer.userID);
+				currentUser = anAnswer.userID;
+				question['total'] = question['total'] + 1; //Also rise the total in skel
+			} else {
+				console.log("sigue siendo "+ anAnswer.userID);
+			}
+		} else {
+			question['total'] = question['total'] + 1; //Also rise the total in skel
+		}
 	}
+
 
 	/* Plan B : dividir las respuestas en array solo en la pregunta mutlichoise -funciona igual que lo de arriba-
 	var question = json[anAnswer.city].query[anAnswer.queryNumber].questions[anAnswer.questionNumber];

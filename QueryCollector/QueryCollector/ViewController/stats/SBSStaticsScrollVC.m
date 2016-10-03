@@ -105,19 +105,11 @@
 //Update views and data according with the new city selected
 -(void)cityChanged:(NSString*)city {
     self.city = city;
-    
-   /* [self.statSlideArray removeAllObjects];
+    [self.statSlideArray removeAllObjects];
     for (UIView *i in self.statsContentScroll.subviews) {
         [i removeFromSuperview];
     }
-    [self loadStatsForWorkshop:self.workshop andCase:self.currentCase];
-    for (UIView *btnView in self.bulletsContent.subviews) {
-        if ([btnView isKindOfClass:[UIButton class]]) {
-            UIButton *btn = (UIButton*)btnView;
-            btn.selected = false;
-        }
-    }
-    [self buildBullets];*/
+    [self loadStatsForCity:self.city andQuery:self.currentQuery];
 }
 
 #pragma mark - City Table
