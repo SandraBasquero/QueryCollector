@@ -7,7 +7,7 @@ The app works online and offline; but the stats showed will not be really update
 
 ##Tech details:
 
-The main goal of this app is to work and practice:
+The technologies used are:
 
 * [Objective-C](https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/ObjectiveC.html)
 * [Node.js](https://nodejs.org/) 
