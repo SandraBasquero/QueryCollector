@@ -10,8 +10,5 @@ The app works online and offline; but stats will not be really updated until the
 The technologies used are:
 
 * [Objective-C](https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/ObjectiveC.html)
-* [Node.js](https://nodejs.org/) 
-* [MongoDB](https://docs.mongodb.com/)
-* [Keystone.js](http://keystonejs.com/)
 * JSON documents
-* Server API
+
