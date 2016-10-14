@@ -30,7 +30,7 @@
 -(NSString*)getApiUrl: (NSString*)route {
     
     //Sandra
-    NSString * theRoute = [NSString stringWithFormat:@"127.0.0.1:3000/%@",route];
+    NSString * theRoute = [NSString stringWithFormat:@"query-collector-server.herokuapp.com/%@",route];
     //NSString * theRoute = [NSString stringWithFormat:@"192.168.100.70:3000/%@",route];
     return theRoute;
 }
@@ -40,7 +40,7 @@
  *  @return Protocolo (http, https)
  */
 -(NSString*)getProtocol {
-    return @"http";
+    return @"https";
 }
 /**
  *  Formatea una url separada en fragmentos
