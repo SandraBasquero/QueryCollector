@@ -31,7 +31,6 @@
     
     //Sandra
     NSString * theRoute = [NSString stringWithFormat:@"query-collector-server.herokuapp.com/%@",route];
-    //NSString * theRoute = [NSString stringWithFormat:@"192.168.100.70:3000/%@",route];
     return theRoute;
 }
 

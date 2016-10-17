@@ -55,10 +55,6 @@
 		B61604281D3EAE830061C382 /* SBSSyncroData.m in Sources */ = {isa = PBXBuildFile; fileRef = B61604271D3EAE830061C382 /* SBSSyncroData.m */; };
 		B6308A731D6E21ED00316EFE /* SBSAnswerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6308A721D6E21ED00316EFE /* SBSAnswerModel.m */; };
 		B6308A761D6E249800316EFE /* SBSAnswerData.m in Sources */ = {isa = PBXBuildFile; fileRef = B6308A751D6E249800316EFE /* SBSAnswerData.m */; };
-		B66748F21D5202B000BC5750 /* 5655-close-up-of-an-isolated-sunflower-pv.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B66748EE1D5202B000BC5750 /* 5655-close-up-of-an-isolated-sunflower-pv.jpg */; };
-		B66748F41D5202B000BC5750 /* 9536-a-strawberry-splashing-in-water-or.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B66748F01D5202B000BC5750 /* 9536-a-strawberry-splashing-in-water-or.jpg */; };
-		B66748F71D5203D500BC5750 /* 6957-illustration-of-a-city-skyline-or.png in Resources */ = {isa = PBXBuildFile; fileRef = B66748F61D5203D500BC5750 /* 6957-illustration-of-a-city-skyline-or.png */; };
-		B66748F91D52046200BC5750 /* 6957-illustration-of-a-city-skyline-or@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B66748F81D52046200BC5750 /* 6957-illustration-of-a-city-skyline-or@2x.png */; };
 		B670283A1D5262E600D911DA /* 15360-illustration-of-city-buildings-in-melbourne-australia-or-resize.png in Resources */ = {isa = PBXBuildFile; fileRef = B67028381D5262E600D911DA /* 15360-illustration-of-city-buildings-in-melbourne-australia-or-resize.png */; };
 		B670283B1D5262E600D911DA /* 15360-illustration-of-city-buildings-in-melbourne-australia-or-resize@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B67028391D5262E600D911DA /* 15360-illustration-of-city-buildings-in-melbourne-australia-or-resize@2x.png */; };
 		B68053E51D47853F0023DBFC /* SBSSlideBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B68053E41D47853F0023DBFC /* SBSSlideBaseVC.m */; };
@@ -91,6 +87,7 @@
 		B6D191811D50B5CD00A88162 /* SBSSlide3Query2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D1917F1D50B5CD00A88162 /* SBSSlide3Query2VC.m */; };
 		B6D191821D50B5CD00A88162 /* SBSSlide3Query2VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D191801D50B5CD00A88162 /* SBSSlide3Query2VC.xib */; };
 		B6E6BC4E1D3FD64B004E5D1B /* SBSSessionActivityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6BC4D1D3FD64B004E5D1B /* SBSSessionActivityModel.m */; };
+		B6F47A0D1DB5567900A67629 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = B6F47A0C1DB5567900A67629 /* launch.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -197,10 +194,6 @@
 		B6308A721D6E21ED00316EFE /* SBSAnswerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSAnswerModel.m; sourceTree = "<group>"; };
 		B6308A741D6E249800316EFE /* SBSAnswerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSAnswerData.h; sourceTree = "<group>"; };
 		B6308A751D6E249800316EFE /* SBSAnswerData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSAnswerData.m; sourceTree = "<group>"; };
-		B66748EE1D5202B000BC5750 /* 5655-close-up-of-an-isolated-sunflower-pv.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "5655-close-up-of-an-isolated-sunflower-pv.jpg"; sourceTree = "<group>"; };
-		B66748F01D5202B000BC5750 /* 9536-a-strawberry-splashing-in-water-or.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "9536-a-strawberry-splashing-in-water-or.jpg"; sourceTree = "<group>"; };
-		B66748F61D5203D500BC5750 /* 6957-illustration-of-a-city-skyline-or.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6957-illustration-of-a-city-skyline-or.png"; sourceTree = "<group>"; };
-		B66748F81D52046200BC5750 /* 6957-illustration-of-a-city-skyline-or@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6957-illustration-of-a-city-skyline-or@2x.png"; sourceTree = "<group>"; };
 		B67028381D5262E600D911DA /* 15360-illustration-of-city-buildings-in-melbourne-australia-or-resize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15360-illustration-of-city-buildings-in-melbourne-australia-or-resize.png"; sourceTree = "<group>"; };
 		B67028391D5262E600D911DA /* 15360-illustration-of-city-buildings-in-melbourne-australia-or-resize@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15360-illustration-of-city-buildings-in-melbourne-australia-or-resize@2x.png"; sourceTree = "<group>"; };
 		B68053E31D47853F0023DBFC /* SBSSlideBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSSlideBaseVC.h; sourceTree = "<group>"; };
@@ -248,6 +241,7 @@
 		B6D191801D50B5CD00A88162 /* SBSSlide3Query2VC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBSSlide3Query2VC.xib; sourceTree = "<group>"; };
 		B6E6BC4C1D3FD64B004E5D1B /* SBSSessionActivityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSSessionActivityModel.h; sourceTree = "<group>"; };
 		B6E6BC4D1D3FD64B004E5D1B /* SBSSessionActivityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSSessionActivityModel.m; sourceTree = "<group>"; };
+		B6F47A0C1DB5567900A67629 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -557,16 +551,13 @@
 		B66748ED1D5200C300BC5750 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B6F47A0C1DB5567900A67629 /* launch.png */,
 				B694A6AB1D8E917600801B21 /* graphic.png */,
 				B694A6AC1D8E917600801B21 /* graphic@2x.png */,
 				B6CC87911D588C190016EE34 /* back-home-btn.png */,
 				B6CC87921D588C190016EE34 /* back-home-btn@2x.png */,
 				B67028381D5262E600D911DA /* 15360-illustration-of-city-buildings-in-melbourne-australia-or-resize.png */,
 				B67028391D5262E600D911DA /* 15360-illustration-of-city-buildings-in-melbourne-australia-or-resize@2x.png */,
-				B66748F81D52046200BC5750 /* 6957-illustration-of-a-city-skyline-or@2x.png */,
-				B66748F61D5203D500BC5750 /* 6957-illustration-of-a-city-skyline-or.png */,
-				B66748EE1D5202B000BC5750 /* 5655-close-up-of-an-isolated-sunflower-pv.jpg */,
-				B66748F01D5202B000BC5750 /* 9536-a-strawberry-splashing-in-water-or.jpg */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -668,11 +659,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B66748F21D5202B000BC5750 /* 5655-close-up-of-an-isolated-sunflower-pv.jpg in Resources */,
 				B6CC87941D588C190016EE34 /* back-home-btn@2x.png in Resources */,
 				B694A6AE1D8E917600801B21 /* graphic@2x.png in Resources */,
 				B68053F41D47DEF40023DBFC /* SBSSlide2Query1VC.xib in Resources */,
-				B66748F71D5203D500BC5750 /* 6957-illustration-of-a-city-skyline-or.png in Resources */,
 				B694A6AD1D8E917600801B21 /* graphic.png in Resources */,
 				B6D191821D50B5CD00A88162 /* SBSSlide3Query2VC.xib in Resources */,
 				B6D191781D50B3E700A88162 /* SBSSlide1Query2VC.xib in Resources */,
@@ -680,18 +669,17 @@
 				B6AD9B731D841C01008C8CA5 /* SBSStats2AnswVC.xib in Resources */,
 				B68053EF1D47DE670023DBFC /* SBSSlide1Query1VC.xib in Resources */,
 				B6AD9B821D841CD1008C8CA5 /* SBSStats6AnswVC.xib in Resources */,
+				B6F47A0D1DB5567900A67629 /* launch.png in Resources */,
 				B6D1916D1D50AE9500A88162 /* SBSSlide3Query1VC.xib in Resources */,
 				957767CD1D2CF3B1006FE5A0 /* LaunchScreen.storyboard in Resources */,
 				B6AD9B781D841C65008C8CA5 /* SBSStats3AnswVC.xib in Resources */,
 				957767CA1D2CF3B1006FE5A0 /* Assets.xcassets in Resources */,
 				B670283A1D5262E600D911DA /* 15360-illustration-of-city-buildings-in-melbourne-australia-or-resize.png in Resources */,
-				B66748F91D52046200BC5750 /* 6957-illustration-of-a-city-skyline-or@2x.png in Resources */,
 				957767C81D2CF3B1006FE5A0 /* Main.storyboard in Resources */,
 				B6D191721D50AFAA00A88162 /* SBSSlide4Query1VC.xib in Resources */,
 				B6AD9B7D1D841C9D008C8CA5 /* SBSStats4AnswVC.xib in Resources */,
 				955BFF2B1D81BCE20082999B /* SBSStaticsScrollVC.xib in Resources */,
 				B6CC87931D588C190016EE34 /* back-home-btn.png in Resources */,
-				B66748F41D5202B000BC5750 /* 9536-a-strawberry-splashing-in-water-or.jpg in Resources */,
 				B670283B1D5262E600D911DA /* 15360-illustration-of-city-buildings-in-melbourne-australia-or-resize@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
