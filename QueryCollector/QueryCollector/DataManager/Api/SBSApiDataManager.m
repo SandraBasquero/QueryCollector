@@ -28,7 +28,6 @@
  *  @return Url raiz
  */
 -(NSString*)getApiUrl: (NSString*)route {
-    
     //Sandra
     NSString * theRoute = [NSString stringWithFormat:@"query-collector-server.herokuapp.com/%@",route];
     return theRoute;
