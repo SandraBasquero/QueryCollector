@@ -43,6 +43,7 @@
             progr.layer.borderWidth = 2.0f;
             [[progr layer] setBorderColor: [UIColor blackColor].CGColor];
         }
+        
         //Fill labels with answer data numbers
         for (int i = 0; i < percentNumLabel.count; i++) {
             UILabel *label = [percentNumLabel objectAtIndex:i];
