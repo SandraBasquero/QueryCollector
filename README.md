@@ -14,4 +14,4 @@ The technologies used are:
 
 ##Some screenshots:
 
-![alt tag] (https://cloud.githubusercontent.com/assets/14217634/22841954/cfa6fac4-efd3-11e6-9b6f-389dceb2e75e.png)
+![alt tag](https://cloud.githubusercontent.com/assets/14217634/22841954/cfa6fac4-efd3-11e6-9b6f-389dceb2e75e.png)
